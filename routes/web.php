@@ -31,4 +31,8 @@ Route::get('/blog', function () {
     return view('blog');
 });
 
+Route::get('/login', function () {
+    return view('admin.loginadmin');
+});
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
