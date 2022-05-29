@@ -196,7 +196,7 @@
                 <ul>
 
                     <li data-transition="slidingoverlayleft">
-                        <img src="landing/images/slides/1.jpg" alt="" width="1920" height="550" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+                        <img src="landing/images/banner.jpeg" alt="" width="1920" height="550" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
 
                         <div class="tp-caption  tp-resizeme" data-x="left" data-hoffset="0" data-y="top" data-voffset="130" data-transform_idle="o:1;" data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="700">
                             <div class="slide-content-box">
@@ -400,7 +400,7 @@
                     <!--Start single item-->
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="single-item text-center">
-                            <h1><span class="timer" data-from="1" data-to="2456" data-speed="5000" data-refresh-interval="50">33</span></h1>
+                            <h1><span class="timer" data-from="1" data-to="33" data-speed="5000" data-refresh-interval="50">33</span></h1>
                             <span class="border"></span>
                             <h3>Client Aktif</h3>
                         </div>
@@ -409,7 +409,7 @@
                     <!--Start single item-->
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="single-item text-center">
-                            <h1><span class="timer" data-from="1" data-to="146" data-speed="5000" data-refresh-interval="50">10</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
+                            <h1><span class="timer" data-from="1" data-to="10" data-speed="5000" data-refresh-interval="50">10</span></h1>
                             <span class="border"></span>
                             <h3>Tenaga Ahli</h3>
                         </div>
@@ -418,7 +418,7 @@
                     <!--Start single item-->
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="single-item text-center">
-                            <h1><span class="timer" data-from="1" data-to="853" data-speed="5000" data-refresh-interval="50">55+</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
+                            <h1><span class="timer" data-from="1" data-to="55" data-speed="5000" data-refresh-interval="50">55+</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
                             <span class="border"></span>
                             <h3>Pengguna Symfoni Mobile</h3>
                         </div>
@@ -427,7 +427,7 @@
                     <!--Start single item-->
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="single-item text-center">
-                            <h1><span class="timer" data-from="1" data-to="2381" data-speed="5000" data-refresh-interval="50">5+</span></h1>
+                            <h1><span class="timer" data-from="1" data-to="5" data-speed="5000" data-refresh-interval="50">5+</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
                             <span class="border"></span>
                             <h3>Mobile Apps untuk Nasabah</h3>
                         </div>
@@ -539,11 +539,9 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="text-holder">
-                            <h3>Cooming Soon</h3>
+                            <h3>Layanan Sistem Informasi dan Teknologi</h3>
                             <div class="text">
-                                <p>We have built an enviable reputation in the consumer goods, heavy industry, high-tech, manufacturing, medical, recreational vehicle, and transportation sectors. multidisciplinary team of engineering experts.</p>
-                                <p>Who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain.</p>
-                                <a class="thm-btn bg-clr1" href="#">Know More</a>
+                                <p>Multipilar sebagai vendor aplikasi inti perbankan untuk BPR, LKM, Koperasi dan UMKM, sangat concern terhadap kualitas layanan. Salah satu misi kami adalah bersama-sama secara sinergi menjadikan bisnis anda tumbuh dan berkembang secara menguntungkan.</p>
                             </div>
                         </div>
                     </div>
@@ -569,7 +567,7 @@
         <section class="latest-blog-area">
             <div class="container">
                 <div class="sec-title text-center">
-                    <h1>Latest News</h1>
+                    <h1>Berita-Berita</h1>
                     <span class="border"></span>
                 </div>
                 <div class="row">
@@ -591,15 +589,15 @@
                             </div>
                             <div class="text-holder">
                                 <a href="blog-single.html">
-                                    <h3 class="blog-title">The best service ever get</h3>
+                                    <h3 class="blog-title">BPR BKPD Pangandaran meminta Multipilar Untuk Speedup Project Digitalisasi</h3>
                                 </a>
                                 <div class="text">
-                                    <p>These men promptly escaped from maximum security stockade to the underground. The Brady Bunch the Brady Bunch.</p>
+                                    <p>Pada era disrupsi ini, perkembangan teknologi terasa begitu cepat. Hal ini menuntut setiap pelaku usaha, termasuk micro banking untuk adaptif. Terlebih lagi ditengah upaya bangkit dari dampak pandemi yang belum tahu kapan berakhir</p>
                                 </div>
                                 <div class="meta-info clearfix">
                                     <div class="left pull-left">
                                         <ul class="post-info">
-                                            <li>By <a href="#">Fletcher</a></li>
+                                            <li>Oleh <a href="#">Fletcher</a></li>
                                             <li><a href="#">Finance, Service</a></li>
                                         </ul>
                                     </div>
@@ -629,15 +627,15 @@
                             </div>
                             <div class="text-holder">
                                 <a href="blog-single.html">
-                                    <h3 class="blog-title">We never said impossible</h3>
+                                    <h3 class="blog-title">Mengapa Aplikasi Berbasis Web Kini Menjadi Pilihan</h3>
                                 </a>
                                 <div class="text">
-                                    <p>The ship set ground on the shore uncharted desert isle all with Gilligan seds that Skipper millionaire and wife. </p>
+                                    <p>Aplikasi berbasis web semakin populer seiring dengan perkembangan dunia internet yang sangat pesat. Selain karena sarana penunjang teknologinya semakin berkembang, juga banyak orang menilai pemeliharaan aplikasi berbasis web ini lebih sederhana dibanding</p>
                                 </div>
                                 <div class="meta-info clearfix">
                                     <div class="left pull-left">
                                         <ul class="post-info">
-                                            <li>By <a href="#">Robertson</a></li>
+                                            <li>Oleh <a href="#">Robertson</a></li>
                                             <li><a href="#">Consulting, Idea</a></li>
                                         </ul>
                                     </div>
@@ -667,15 +665,15 @@
                             </div>
                             <div class="text-holder">
                                 <a href="blog-single.html">
-                                    <h3 class="blog-title">Latest consulting seminar</h3>
+                                    <h3 class="blog-title">Transaksi Digital Menggunakan Electronic Data Capture (EDC)</h3>
                                 </a>
                                 <div class="text">
-                                    <p>Team like us we had it made. Those were the days. Now were up in the big leagues getting our turn at bat skipper team.</p>
+                                    <p>Berbagai inovasi terus dikembangkan manusia modern diberbagai bidang di belahan dunia manapun. Pada dasarnya inovasi bertujuan untuk meningkatkan sumber-sumber tenaga, meningkatkan kualitas, uang, dan sarana, termasuk struktur dan prosedur organisasi</p>
                                 </div>
                                 <div class="meta-info clearfix">
                                     <div class="left pull-left">
                                         <ul class="post-info">
-                                            <li>By <a href="#">Peterson</a></li>
+                                            <li>Oleh <a href="#">Peterson</a></li>
                                             <li><a href="#">Services, Corporate</a></li>
                                         </ul>
                                     </div>
@@ -696,7 +694,7 @@
         <section class="testimonial-area" style="background-image:url(images/testimonial/testimonial-bg.jpg);">
             <div class="container">
                 <div class="sec-title text-center">
-                    <h1>What Our Customers say</h1>
+                    <h1>Testimonial</h1>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -704,7 +702,7 @@
                             <!--Start single item-->
                             <div class="single-item text-center">
                                 <div class="text-holder">
-                                    <p>We help clients find ways to turn everyday information into actionable insights by embedding analytics across their organization’s strategy, operations, and all working systems.</p>
+                                    <p>Kami membantu klien menemukan cara untuk mengubah informasi sehari-hari menjadi wawasan yang dapat ditindaklanjuti dengan menyematkan analitik di seluruh strategi, operasi, dan semua sistem kerja organisasi mereka.</p>
                                 </div>
                                 <div class="client-info">
                                     <div class="img-holder">
@@ -720,7 +718,7 @@
                             <!--Start single item-->
                             <div class="single-item text-center">
                                 <div class="text-holder">
-                                    <p>We help clients find ways to turn everyday information into actionable insights by embedding analytics across their organization’s strategy, operations, and all working systems.</p>
+                                    <p>Kami membantu klien menemukan cara untuk mengubah informasi sehari-hari menjadi wawasan yang dapat ditindaklanjuti dengan menyematkan analitik di seluruh strategi, operasi, dan semua sistem kerja organisasi mereka.</p>
                                 </div>
                                 <div class="client-info">
                                     <div class="img-holder">
@@ -736,7 +734,7 @@
                             <!--Start single item-->
                             <div class="single-item text-center">
                                 <div class="text-holder">
-                                    <p>We help clients find ways to turn everyday information into actionable insights by embedding analytics across their organization’s strategy, operations, and all working systems.</p>
+                                    <p>Kami membantu klien menemukan cara untuk mengubah informasi sehari-hari menjadi wawasan yang dapat ditindaklanjuti dengan menyematkan analitik di seluruh strategi, operasi, dan semua sistem kerja organisasi mereka.</p>
                                 </div>
                                 <div class="client-info">
                                     <div class="img-holder">
@@ -760,7 +758,7 @@
         <section class="brand-area">
             <div class="container">
                 <div class="sec-title">
-                    <h1>Our Partners</h1>
+                    <h1>Klien Kami</h1>
                     <span class="border"></span>
                 </div>
                 <div class="row">
@@ -816,7 +814,7 @@
                         <div class="col-md-12">
                             <div class="footer-top-content">
                                 <div class="title pull-left">
-                                    <h3>Berpengalaman lebih dari 13 tahun untuk membangun Core Banking System yang handal dan adaptif.</h3>
+                                    <h5 style="margin-top: 25px; font-size: 16px">Berpengalaman lebih dari 13 tahun untuk membangun Core Banking System yang handal dan adaptif.</h5>
                                 </div>
                                 <div class="button pull-right">
                                     <a class="thm-btn bg-clr1" href="#">Konsultasi Sekarang</a>
@@ -837,7 +835,7 @@
                                 </a>
                             </div>
                             <div class="our-info">
-                                <p>Our team offers the most up-to-date, sustainable manufacturing solutions. teachings of the great explorer of the truth We only source materials from tried and trusted suppliers.</p>
+                                <p>PT. Multipilar Balantika adalah perusahaan yang bergerak di bidang pelayanan jasa konsultasi manajemen, pelatihan, dan Teknologi Informasi untuk institusi Microbanking, Small & Medium Enterprise(SME).</p>
                             </div>
                         </div>
                     </div>
@@ -846,15 +844,13 @@
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="single-footer-widget wedo pd-left pd-bottom">
                             <div class="title">
-                                <h3>What We Do</h3>
+                                <h3>Apa yang Kami Lakukan</h3>
                             </div>
                             <ul class="we-do-list">
-                                <li><a href="#">Business Growth</a></li>
-                                <li><a href="#">Sustainability</a></li>
-                                <li><a href="#">Performance</a></li>
-                                <li><a href="#">Customer Insights</a></li>
-                                <li><a href="#">Organization</a></li>
-                                <li><a href="#">Advanced Analytics</a></li>
+                                <li><a href="#">SimfoniBPR</a></li>
+                                <li><a href="#">SimfoniLKM</a></li>
+                                <li><a href="#">SimfoniBMT</a></li>
+                                <li><a href="#">Mobile</a></li>
                             </ul>
                         </div>
                     </div>
@@ -863,18 +859,18 @@
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="single-footer-widget">
                             <div class="title">
-                                <h3>Latest News</h3>
+                                <h3>Berita Terkini</h3>
                             </div>
                             <ul class="latest-news-items">
                                 <li>
                                     <a href="#">
-                                        Seminar for improve your business<br> profit & loss
+                                        BPR BKPD Pangandaran meminta Multipilar Untuk Speedup<br> Project Digitalisasi
                                     </a>
                                     <p>August 21, 2016</p>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        Experts Openion for save money<br> for your future.
+                                        Mengapa Aplikasi Berbasis Web<br> Kini Menjadi Pilihan
                                     </a>
                                     <p>March 14, 2016</p>
                                 </li>
@@ -886,7 +882,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="single-footer-widget pd-top pd-left">
                             <div class="title">
-                                <h3>Contact Us</h3>
+                                <h3>Kontak Kami</h3>
                             </div>
                             <ul class="footer-contact-info">
                                 <li>
@@ -894,7 +890,7 @@
                                         <span class="icon-world"></span>
                                     </div>
                                     <div class="text-holder">
-                                        <p>22/121 Apple Street, New York,<br> NY 10012, USA</p>
+                                        <p>Jl. Permata Raya Blok H Kav. No. 4, Tugujaya, Kec. Cihideung, Kab. Tasikmalaya<br>Jawa Barat 46115</p>
                                     </div>
                                 </li>
                                 <li>
@@ -902,7 +898,7 @@
                                         <span class="icon-technology-1"></span>
                                     </div>
                                     <div class="text-holder">
-                                        <p>Phone: +123-456-7890</p>
+                                        <p>Telepon: (0265) 2354583</p>
                                     </div>
                                 </li>
                                 <li>
@@ -910,7 +906,7 @@
                                         <span class="icon-letter-1 bottom-envelop"></span>
                                     </div>
                                     <div class="text-holder">
-                                        <p>Mail@Assuranceteam.com</p>
+                                        <p>cs@multipilarbalantika.co.id</p>
                                     </div>
                                 </li>
                             </ul>
@@ -935,14 +931,14 @@
                     <div class="col-md-12">
                         <div class="footer-bottom">
                             <div class="copyright-text pull-left">
-                                <p>Copyrights © 2017 All Rights Reserved, Powered by <a href="#">Assurance.</a></p>
+                                <p>Copyrights © 2022 All Rights Reserved, Powered by <a href="#">PT Multipilar Balantika.</a></p>
                             </div>
                             <div class="footer-menu pull-right">
                                 <ul>
-                                    <li><a href="#">Legal</a></li>
-                                    <li><a href="#">Sitemap</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Terms & Condition</a></li>
+                                    <li><a href="#">Kebijakan Hukum</a></li>
+                                    <li><a href="#">Peta Situs</a></li>
+                                    <li><a href="#">Kebijakan Pribadi</a></li>
+                                    <li><a href="#">Syarat & Ketentuan</a></li>
                                 </ul>
                             </div>
                         </div>
