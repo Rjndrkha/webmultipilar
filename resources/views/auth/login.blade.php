@@ -15,6 +15,7 @@
 <body>
     <div class="login">
         <div class="form-container">
+            
             <form method="POST" action="{{ route('login') }}">
                 @csrf
                 <h2 class="text-center">Administrator Login</h2>
@@ -47,11 +48,20 @@
                     </div>
                 </div>
                 <div class="form-group">
+
                     <button class="btn btn-primary btn-block">Login</button>
+
+
                 </div>
 
             </form>
             <div class="image-holder"></div>
+        </div>
+        <div class="form-group">
+            <a href="/dashboard">
+                <button class="btn btn-primary btn-block">DASHBOARD TEST PAGE CLICK HERE TO VIEW</button>
+            </a>
+
         </div>
     </div>
 </body>

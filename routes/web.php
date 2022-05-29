@@ -29,6 +29,8 @@ Route::get('/products', [App\Http\Controllers\ProductController::class, 'index']
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('index');
 
 
-
+Route::get('/dashboard', function () {
+    return view('admin.index');
+});
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
