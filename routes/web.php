@@ -31,8 +31,14 @@ Route::get('/blog', function () {
     return view('blog');
 });
 
-Route::get('/login', function () {
-    return view('admin.loginadmin');
-});
+// Route::get('/login', function () {
+//     return view('admin.loginadmin');
+// });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//post banner store
+Route::post('/banner/create', [App\Http\Controllers\BannerController::class, 'store'])->name('banners.store');
+
+
+
