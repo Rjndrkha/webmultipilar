@@ -58,7 +58,7 @@
             <div class="image-holder"></div>
         </div>
         <div class="form-group">
-            <a href="/dashboard">
+            <a href="/dashboardd">
                 <button class="btn btn-primary btn-block">DASHBOARD TEST PAGE CLICK HERE TO VIEW</button>
             </a>
 

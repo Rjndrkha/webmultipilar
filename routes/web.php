@@ -7,6 +7,7 @@ use App\Http\Controllers\LandingController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,10 +28,7 @@ Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 Route::get('/about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('index');
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])->name('index');
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('index');
+Route::get('/dashboardd', [App\Http\Controllers\DashboardController::class, 'index'])->name('index');
 
-
-Route::get('/dashboard', function () {
-    return view('admin.index');
-});
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
