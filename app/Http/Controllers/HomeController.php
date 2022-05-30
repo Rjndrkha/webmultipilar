@@ -3,6 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\Models\Banner;
+use \App\Models\Service;
+use \App\Models\DataCount;
+use \App\Models\Blog;
+use \App\Models\Team;
+use \App\Models\Testimonial;
+use \App\Models\Gallery;
+
+
+
 
 class HomeController extends Controller
 {
@@ -11,10 +21,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     /**
      * Show the application dashboard.
@@ -22,7 +32,23 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
+
     {
-        return view('home');
+        $banners = Banner::all();
+        $services = Service::all();
+        $teams = Team::all();
+        $blogs = Blog::all();
+        $testimonials = Testimonial::all();
+        $galleries = Gallery::all();
+
+        return view('home', ['banners' => $banners,
+                             'services' => $services, 
+                             'teams' => $teams,
+                             'blogs' => $blogs,'testimonials' => $testimonials,'galleries' => $galleries,]);
     }
+    
+     //menampilkan banner in home
+  
+   
+
 }

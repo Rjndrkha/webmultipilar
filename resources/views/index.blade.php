@@ -196,14 +196,17 @@
                 <ul>
 
                     <li data-transition="slidingoverlayleft">
-                        <img src="landing/images/banner.jpeg" alt="" width="1920" height="550" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+                        @foreach($banners as $banner)
+                        <img src="{{ asset('storage/'.$banner->image1) }}" alt="" width="1920" height="550" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+                        
 
                         <div class="tp-caption  tp-resizeme" data-x="left" data-hoffset="0" data-y="top" data-voffset="130" data-transform_idle="o:1;" data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="700">
+                            
                             <div class="slide-content-box">
-                                <h1>PT. Multipilar Balantika <br> Penyedia Core Banking System</h1>
-                                <p>Telah berpengalaman lebih dari 13 tahun <br>
-                                    membangun sistem untuk BPR, LKM dan Koperasi.</p>
+                                <h1>{{ $banner->title1 }}<br>{{$banner->subtitle1}}</h1>  
+                                <p>{{$banner->description1}}</p>
                             </div>
+                            
                         </div>
                         <div class="tp-caption tp-resizeme" data-x="left" data-hoffset="0" data-y="top" data-voffset="358" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="2300">
                             <div class="slide-content-box">
@@ -221,11 +224,12 @@
                         </div>
                     </li>
                     <li data-transition="fade">
-                        <img src="landing/images/slides/2.jpg" alt="" width="1920" height="550" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+                        
+                        <img src="{{ asset('storage/'.$banner->image2) }}" alt="" width="1920" height="550" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
 
                         <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-47" data-transform_idle="o:1;" data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" data-splitin="none" data-splitout="none" data-start="500">
                             <div class="slide-content-box middle-slide">
-                                <h1>Coba CBS Kami Sekarang!</h1>
+                                <h1>{{$banner->title2}}</h1>
                             </div>
                         </div>
                         <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="75" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="2300">
@@ -235,6 +239,7 @@
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                     </li>
 
 
@@ -242,7 +247,6 @@
             </div>
         </section>
         <!--End rev slider wrapper-->
-
         <!--Start call to action area-->
         <section class="call-to-action-area">
             <div class="container">
@@ -254,10 +258,11 @@
                 </div>
                 <div class="row">
                     <!--Start single item-->
+                    @foreach($services as $service)
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="single-item hvr-shadow text-center">
                             <div class="img-holder">
-                                <img src="landing/images/callto-action/1.jpg" alt="Awesome Image">
+                                <img src="{{ asset('storage/'.$service->image) }}" alt="Awesome Image">
                                 <div class="overlay-style-one">
                                     <div class="box">
                                         <div class="content">
@@ -267,71 +272,12 @@
                                 </div>
                             </div>
                             <div class="text-holder">
-                                <h3>Bank Perkreditan Rakyat (BPR).</h3>
-                                <p>Kami menyediakan solusi bagi BPR melalui produk SimfoniBPR</p>
+                                <h3>{{$service->title}}</h3>
+                                <p>{{$service->subtitle}}</p>
                             </div>
                         </div>
                     </div>
-                    <!--End single item-->
-                    <!--Start single item-->
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-item hvr-shadow text-center">
-                            <div class="img-holder">
-                                <img src="landing/images/callto-action/2.jpg" alt="Awesome Image">
-                                <div class="overlay-style-one">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="audit-assurance.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-holder">
-                                <h3>Lembaga Keuangan Masyarakat (LKM)</h3>
-                                <p>Kami menyediakan solusi bagi LKM melalui produk SimfoniLKM.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single item-->
-                    <!--Start single item-->
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-item hvr-shadow text-center">
-                            <div class="img-holder">
-                                <img src="landing/images/callto-action/3.jpg" alt="Awesome Image">
-                                <div class="overlay-style-one">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="trades-stocks.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-holder">
-                                <h3>Koperasi</h3>
-                                <p>Kami menyediakan solusi bagi Koperasi melalui produk SimfoniKoperasi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single item-->
-                    <!--Start single item-->
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-item hvr-shadow text-center">
-                            <div class="img-holder">
-                                <img src="landing/images/callto-action/4.jpg" alt="Awesome Image">
-                                <div class="overlay-style-one">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="investment-plan.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-holder">
-                                <h3>Bank Muamalat Watanwil (BMT)</h3>
-                                <p>Kami menyediakan solusi bagi BMT melalui produk SimfoniBMT.</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                     <!--End single item-->
                 </div>
             </div>
@@ -405,11 +351,14 @@
                             <h3>Client Aktif</h3>
                         </div>
                     </div>
+                    
                     <!--End single item-->
                     <!--Start single item-->
                     <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    
                         <div class="single-item text-center">
-                            <h1><span class="timer" data-from="1" data-to="10" data-speed="5000" data-refresh-interval="50">10</span></h1>
+                            <h1><span class="timer" data-from="1" data-to="33" data-speed="5000" data-refresh-interval="50">10</span></h1>
                             <span class="border"></span>
                             <h3>Tenaga Ahli</h3>
                         </div>
@@ -432,15 +381,13 @@
                             <h3>Mobile Apps untuk Nasabah</h3>
                         </div>
                     </div>
+                   
                     <!--End single item-->
 
                 </div>
             </div>
         </section>
         
-
-        
-
 
         <!--Start team area-->
         <section class="team-area">
@@ -451,82 +398,19 @@
                 </div>
                 <div class="row">
                     <!--star single tema-->
+                    @foreach($teams as $team)
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="single-team hvr-float-shadow text-center">
                             <div class="img-holder">
-                                <img src="landing/images/team/1.jpg" alt="Awesome Image">
+                                <img src="{{ asset('storage/'.$team->image) }}" alt="Awesome Image">
                             </div>
                             <div class="title-holder">
-                                <h3>Brown Angelino</h3>
-                                <p>President</p>
+                                <h3>{{$team->name}}</h3>
+                                <p>{{$team->position}}</p>
                             </div>
                         </div>
                     </div>
-                    <!--End single tema-->
-                    <!--star single tema-->
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <div class="single-team hvr-float-shadow text-center">
-                            <div class="img-holder">
-                                <img src="landing/images/team/2.jpg" alt="Awesome Image">
-                            </div>
-                            <div class="title-holder">
-                                <h3>Astley Fletcher</h3>
-                                <p>Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single tema-->
-                    <!--star single tema-->
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <div class="single-team hvr-float-shadow text-center">
-                            <div class="img-holder">
-                                <img src="landing/images/team/3.jpg" alt="Awesome Image">
-                            </div>
-                            <div class="title-holder">
-                                <h3>Jones Antony</h3>
-                                <p>Manager</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single tema-->
-                    <!--star single tema-->
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <div class="single-team hvr-float-shadow text-center">
-                            <div class="img-holder">
-                                <img src="landing/images/team/4.jpg" alt="Awesome Image">
-                            </div>
-                            <div class="title-holder">
-                                <h3>Venanda Bond</h3>
-                                <p>Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single tema-->
-                    <!--star single tema-->
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <div class="single-team hvr-float-shadow text-center">
-                            <div class="img-holder">
-                                <img src="landing/images/team/5.jpg" alt="Awesome Image">
-                            </div>
-                            <div class="title-holder">
-                                <h3>Toom Russel</h3>
-                                <p>Accountant</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single tema-->
-                    <!--star single tema-->
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <div class="single-team hvr-float-shadow text-center">
-                            <div class="img-holder">
-                                <img src="landing/images/team/6.jpg" alt="Awesome Image">
-                            </div>
-                            <div class="title-holder">
-                                <h3>Bernett Rotty</h3>
-                                <p>Chairman</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                     <!--End single tema-->
                 </div>
             </div>
@@ -571,13 +455,16 @@
                     <span class="border"></span>
                 </div>
                 <div class="row">
+                    @foreach($blogs as $blog)
                     <!--Start single latest blog-->
                     <div class="col-md-4">
                         <div class="single-blog-post">
                             <div class="img-holder">
-                                <img src="landing/images/blog/lat-blog-1.jpg" alt="Awesome Image">
+                                <img src="{{ asset('storage/'.$blog->image) }}" alt="Awesome Image">
                                 <div class="published-date">
-                                    <h3>21 Aug</h3>
+                                    <h3>{{
+                                        $blog->updated_at
+                                    }}</h3>
                                 </div>
                                 <div class="overlay-style-one">
                                     <div class="box">
@@ -589,16 +476,16 @@
                             </div>
                             <div class="text-holder">
                                 <a href="blog-single.html">
-                                    <h3 class="blog-title">BPR BKPD Pangandaran meminta Multipilar Untuk Speedup Project Digitalisasi</h3>
+                                    <h3 class="blog-title">{{$blog->title}}</h3>
                                 </a>
                                 <div class="text">
-                                    <p>Pada era disrupsi ini, perkembangan teknologi terasa begitu cepat. Hal ini menuntut setiap pelaku usaha, termasuk micro banking untuk adaptif. Terlebih lagi ditengah upaya bangkit dari dampak pandemi yang belum tahu kapan berakhir</p>
+                                    <p>{{$blog->content}}</p>
                                 </div>
                                 <div class="meta-info clearfix">
                                     <div class="left pull-left">
                                         <ul class="post-info">
-                                            <li>Oleh <a href="#">Fletcher</a></li>
-                                            <li><a href="#">Finance, Service</a></li>
+                                            <li>Oleh <a href="#">{{$blog->author}}</a></li>
+                                            <li><a href="#">{{$blog->category}}, {{$blog->tag}}</a></li>
                                         </ul>
                                     </div>
                                     <div class="right pull-right">
@@ -608,83 +495,9 @@
                             </div>
                         </div>
                     </div>
+                    @endforeach
                     <!--End single latest blog-->
-                    <!--Start single latest blog-->
-                    <div class="col-md-4">
-                        <div class="single-blog-post">
-                            <div class="img-holder">
-                                <img src="landing/images/blog/lat-blog-2.jpg" alt="Awesome Image">
-                                <div class="published-date">
-                                    <h3>17 May</h3>
-                                </div>
-                                <div class="overlay-style-one">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-holder">
-                                <a href="blog-single.html">
-                                    <h3 class="blog-title">Mengapa Aplikasi Berbasis Web Kini Menjadi Pilihan</h3>
-                                </a>
-                                <div class="text">
-                                    <p>Aplikasi berbasis web semakin populer seiring dengan perkembangan dunia internet yang sangat pesat. Selain karena sarana penunjang teknologinya semakin berkembang, juga banyak orang menilai pemeliharaan aplikasi berbasis web ini lebih sederhana dibanding</p>
-                                </div>
-                                <div class="meta-info clearfix">
-                                    <div class="left pull-left">
-                                        <ul class="post-info">
-                                            <li>Oleh <a href="#">Robertson</a></li>
-                                            <li><a href="#">Consulting, Idea</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="right pull-right">
-                                        <a class="post-share" href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single latest blog-->
-                    <!--Start single latest blog-->
-                    <div class="col-md-4">
-                        <div class="single-blog-post">
-                            <div class="img-holder">
-                                <img src="landing/images/blog/lat-blog-3.jpg" alt="Awesome Image">
-                                <div class="published-date">
-                                    <h3>24 Apr</h3>
-                                </div>
-                                <div class="overlay-style-one">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-holder">
-                                <a href="blog-single.html">
-                                    <h3 class="blog-title">Transaksi Digital Menggunakan Electronic Data Capture (EDC)</h3>
-                                </a>
-                                <div class="text">
-                                    <p>Berbagai inovasi terus dikembangkan manusia modern diberbagai bidang di belahan dunia manapun. Pada dasarnya inovasi bertujuan untuk meningkatkan sumber-sumber tenaga, meningkatkan kualitas, uang, dan sarana, termasuk struktur dan prosedur organisasi</p>
-                                </div>
-                                <div class="meta-info clearfix">
-                                    <div class="left pull-left">
-                                        <ul class="post-info">
-                                            <li>Oleh <a href="#">Peterson</a></li>
-                                            <li><a href="#">Services, Corporate</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="right pull-right">
-                                        <a class="post-share" href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single latest blog-->
+                   
                 </div>
             </div>
         </section>
@@ -700,53 +513,24 @@
                     <div class="col-md-12">
                         <div class="testimonial-carousel">
                             <!--Start single item-->
+                            @foreach($testimonials as $testimonial)
                             <div class="single-item text-center">
                                 <div class="text-holder">
-                                    <p>Kami membantu klien menemukan cara untuk mengubah informasi sehari-hari menjadi wawasan yang dapat ditindaklanjuti dengan menyematkan analitik di seluruh strategi, operasi, dan semua sistem kerja organisasi mereka.</p>
+                                    <p>{{$testimonial->description}}</p>
                                 </div>
                                 <div class="client-info">
                                     <div class="img-holder">
-                                        <img src="landing/images/testimonial/1.png" alt="Client Photo">
+                                        <img src="{{ asset('storage/'.$testimonial->image) }}" alt="Client Photo">
                                     </div>
                                     <div class="name">
-                                        <h3>Robert Williamson</h3>
-                                        <p>Newyork</p>
+                                        <h3>{{$testimonial->name}}</h3>
+                                        <p>{{$testimonial->address}}</p>
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
                             <!--End single item-->
-                            <!--Start single item-->
-                            <div class="single-item text-center">
-                                <div class="text-holder">
-                                    <p>Kami membantu klien menemukan cara untuk mengubah informasi sehari-hari menjadi wawasan yang dapat ditindaklanjuti dengan menyematkan analitik di seluruh strategi, operasi, dan semua sistem kerja organisasi mereka.</p>
-                                </div>
-                                <div class="client-info">
-                                    <div class="img-holder">
-                                        <img src="landing/images/testimonial/1.png" alt="Client Photo">
-                                    </div>
-                                    <div class="name">
-                                        <h3>Robert Williamson</h3>
-                                        <p>Newyork</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End single item-->
-                            <!--Start single item-->
-                            <div class="single-item text-center">
-                                <div class="text-holder">
-                                    <p>Kami membantu klien menemukan cara untuk mengubah informasi sehari-hari menjadi wawasan yang dapat ditindaklanjuti dengan menyematkan analitik di seluruh strategi, operasi, dan semua sistem kerja organisasi mereka.</p>
-                                </div>
-                                <div class="client-info">
-                                    <div class="img-holder">
-                                        <img src="landing/images/testimonial/1.png" alt="Client Photo">
-                                    </div>
-                                    <div class="name">
-                                        <h3>Robert Williamson</h3>
-                                        <p>Newyork</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End single item-->
+                           
                         </div>
                     </div>
                 </div>
@@ -765,40 +549,15 @@
                     <div class="col-md-12">
                         <div class="brand">
                             <!--Start single item-->
-                            <a class="tool_tip" title="Media Partner" href="#">
+                            @foreach($galleries as $gallery)
+                            <a class="tool_tip" title="{{$gallery->title}}" href="#">
                                 <div class="single-item">
-                                    <img src="landing/images/brand/1.jpg" alt="Awesome Brand Image">
+                                    <img src="{{ asset('storage/'.$gallery->image) }}" alt="Awesome Brand Image">
                                 </div>
                             </a>
+                            @endforeach
                             <!--End single item-->
-                            <!--Start single item-->
-                            <a class="tool_tip" title="Media Partner" href="#">
-                                <div class="single-item">
-                                    <img src="landing/images/brand/2.jpg" alt="Awesome Brand Image">
-                                </div>
-                            </a>
-                            <!--End single item-->
-                            <!--Start single item-->
-                            <a class="tool_tip" title="Media Partner" href="#">
-                                <div class="single-item">
-                                    <img src="landing/images/brand/3.jpg" alt="Awesome Brand Image">
-                                </div>
-                            </a>
-                            <!--End single item-->
-                            <!--Start single item-->
-                            <a class="tool_tip" title="Media Partner" href="#">
-                                <div class="single-item" title="Media Partner">
-                                    <img src="landing/images/brand/4.jpg" alt="Awesome Brand Image">
-                                </div>
-                            </a>
-                            <!--End single item-->
-                            <!--Start single item-->
-                            <a class="tool_tip" title="Media Partner" href="#">
-                                <div class="single-item">
-                                    <img src="landing/images/brand/5.jpg" alt="Awesome Brand Image">
-                                </div>
-                            </a>
-                            <!--End single item-->
+                            
                         </div>
                     </div>
                 </div>
@@ -807,7 +566,7 @@
         <!--End Brand area-->
 
         <!--Start footer area-->
-        <footer id="contact" class="footer-area" style="background-image:url(images/footer/footer-bg.jpg);">
+        <footer id="contact" class="footer-area" style="background-image:url(landing/images/footer/footer-bg.jpg);">
             <div class="footer-top-area">
                 <div class="container">
                     <div class="row">
