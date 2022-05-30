@@ -3,28 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Blog;
-use App\Models\Category;
-use App\Models\Tag;
+use App\Models\Gallery;
 
-class BlogController extends Controller
+class GalleryController extends Controller
 {
-    
+    //
+
     public function index()
     {
-        return view('home');
+        return view('pages.gallery');
     }
-    
+
     public function create()
     {
-        $categories = Category::all();
-        $tags = Tag::all();
-        return view('pages.admin.create-blog', ['categories' => $categories, 'tags' => $tags]);
+        return view('pages.admin.create-gallery');
     }
-    
+
     public function store(Request $request)
     {
-        Blog::create([
+        Gallery::create([
             'title' => $request->title,
             'image' => $request->image->store('images'),
             'content' => $request->content,
@@ -34,42 +31,37 @@ class BlogController extends Controller
         ]);
         return redirect('/home');
     }
-    
+
     public function show($id)
     {
-        $blog = Blog::find($id);
-        return view('pages.blog', ['blog' => $blog]);
+        $gallery = Gallery::find($id);
+        return view('pages.gallery', ['gallery' => $gallery]);
     }
-    
+
     public function edit($id)
     {
-        $blog = Blog::find($id);
-        $categories = Category::all();
-        $tags = Tag::all();
-        return view('pages.admin.edit-blog', ['blog' => $blog, 'categories' => $categories,
-                                              'tags' => $tags]);
+        $gallery = Gallery::find($id);
+        return view('pages.admin.edit-gallery', ['gallery' => $gallery]);
     }
-    
+
     public function update(Request $request, $id)
     {
-        $blog = Blog::find($id);
-        $blog->update([
+        $gallery = Gallery::find($id);
+        $gallery->update([
             'title' => $request->title,
             'image' => $request->image->store('images'),
             'content' => $request->content,
             'category' => $request->category,
             'tag' => $request->tag,
-            'author' => $request->author,
-            'updated_at' => now().' '.now()->format('H:i:s')
+            'author' => $request->author
         ]);
         return redirect('/home');
     }
-    
+
     public function destroy($id)
     {
-        $blog = Blog::find($id);
-        $blog->delete();
-        return redirect('/home');
+        $gallery = Gallery::find($id);
+        $gallery->delete();
     }
 
 }
