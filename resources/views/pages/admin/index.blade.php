@@ -37,8 +37,8 @@
                     <div class="media">
                         <img src="dashboard/assets/img/90x90.jpg" class="img-fluid mr-2" alt="admin-profile">
                         <div class="media-body align-self-center">
-                            <h6 class="mb-1">Alan Green</h6>
-                            <p class="mb-0">UI/UX Designer</p>
+                            <h6 class="mb-1">{{ Auth::user()->name }}</h6>
+                            <p class="mb-0">{{ Auth::user()->email }}</p>
                         </div>
                     </div>
                 </a>
@@ -96,8 +96,8 @@
                     <div class="media">
                         <img src="dashboard/assets/img/90x90.jpg" class="img-fluid mr-2" alt="admin-profile">
                         <div class="media-body align-self-center">
-                            <h6 class="mb-1">Alan Green</h6>
-                            <p class="mb-0">UI/UX Designer</p>
+                        <h6 class="mb-1">{{ Auth::user()->name }}</h6>
+                            <p class="mb-0">{{ Auth::user()->email }}</p>
                         </div>
                     </div>
                 </a>
