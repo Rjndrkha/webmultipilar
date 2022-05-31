@@ -1,5 +1,5 @@
 <!-- edit testimonial view -->
-@extends('layouts.app')
+@extends('layouts.admin')
 
 
 @section('content')

@@ -41,4 +41,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get the blogs for the user.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<Blog>
+     */
+    public function blogs()
+    {
+        return $this->hasMany(Blog::class);
+    }
 }

@@ -1,5 +1,5 @@
 <!-- create service -->
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <!-- content create service -->
