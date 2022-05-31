@@ -24,6 +24,7 @@
                                 <div class="card-header">
                                     <h3 class="card-title">Banners</h3>
                                     <!-- create hide banner -->
+                                    <a href="#" class="btn btn-primary">Create</a>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">

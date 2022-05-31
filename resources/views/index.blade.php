@@ -1,3 +1,7 @@
+@extends('layouts.app1')
+
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth;">
 
@@ -28,45 +32,7 @@
         <div class="preloader"></div>
         <!--End Preloader -->
 
-        <!--Start Top bar area -->
-        <section class="top-bar-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-12 col-xs-12">
-                        <div class="top-info">
-                            <ul>
-                                <li><span class="icon-signs"></span>ALAMAT MULTIPILAR</li>
-                                <li><span class="icon-clock"></span>Opening Time: Mon-Sat: 09.00 to 17.00</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-8 col-xs-9">
-                        <div class="top-right">
-                            <ul>
 
-
-                                <li><a href="/login">Login Admin</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-1 col-sm-4 col-xs-3">
-                        <div class="language-switcher">
-                            <div id="polyglotLanguageSwitcher">
-                                <form action="#">
-                                    <select id="polyglot-language-options">
-                                        <option id="id" value="id" selected>Indonesia</option>
-                                        <option id="en" value="en">English</option>
-
-                                    </select>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!--End Top bar area -->
 
         <!--Start header area-->
         <header class="header-area">
@@ -198,15 +164,15 @@
                     <li data-transition="slidingoverlayleft">
                         @foreach($banners as $banner)
                         <img src="{{ asset('storage/'.$banner->image1) }}" alt="" width="1920" height="550" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
-                        
+
 
                         <div class="tp-caption  tp-resizeme" data-x="left" data-hoffset="0" data-y="top" data-voffset="130" data-transform_idle="o:1;" data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="700">
-                            
+
                             <div class="slide-content-box">
-                                <h1>{{ $banner->title1 }}<br>{{$banner->subtitle1}}</h1>  
+                                <h1>{{ $banner->title1 }}<br>{{$banner->subtitle1}}</h1>
                                 <p>{{$banner->description1}}</p>
                             </div>
-                            
+
                         </div>
                         <div class="tp-caption tp-resizeme" data-x="left" data-hoffset="0" data-y="top" data-voffset="358" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="2300">
                             <div class="slide-content-box">
@@ -224,7 +190,7 @@
                         </div>
                     </li>
                     <li data-transition="fade">
-                        
+
                         <img src="{{ asset('storage/'.$banner->image2) }}" alt="" width="1920" height="550" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
 
                         <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-47" data-transform_idle="o:1;" data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" data-splitin="none" data-splitout="none" data-start="500">
@@ -351,12 +317,12 @@
                             <h3>Client Aktif</h3>
                         </div>
                     </div>
-                    
+
                     <!--End single item-->
                     <!--Start single item-->
                     <div class="col-md-3 col-sm-6 col-xs-12">
 
-                    
+
                         <div class="single-item text-center">
                             <h1><span class="timer" data-from="1" data-to="33" data-speed="5000" data-refresh-interval="50">10</span></h1>
                             <span class="border"></span>
@@ -381,13 +347,13 @@
                             <h3>Mobile Apps untuk Nasabah</h3>
                         </div>
                     </div>
-                   
+
                     <!--End single item-->
 
                 </div>
             </div>
         </section>
-        
+
 
         <!--Start team area-->
         <section class="team-area">
@@ -497,7 +463,7 @@
                     </div>
                     @endforeach
                     <!--End single latest blog-->
-                   
+
                 </div>
             </div>
         </section>
@@ -530,7 +496,7 @@
                             </div>
                             @endforeach
                             <!--End single item-->
-                           
+
                         </div>
                     </div>
                 </div>
@@ -557,7 +523,7 @@
                             </a>
                             @endforeach
                             <!--End single item-->
-                            
+
                         </div>
                     </div>
                 </div>
@@ -776,3 +742,4 @@
 </body>
 
 </html>
+@endsection
