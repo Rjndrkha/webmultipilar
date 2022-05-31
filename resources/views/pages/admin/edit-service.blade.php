@@ -1,5 +1,5 @@
 <!-- edit sevice view -->
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <div class="container">

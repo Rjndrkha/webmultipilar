@@ -1,4 +1,4 @@
-@extends('layouts.app1')
+@extends('layouts.app')
 
 @section('content')
 
@@ -331,8 +331,8 @@
                                 <div class="meta-info clearfix">
                                     <div class="left pull-left">
                                         <ul class="post-info">
-                                            <li>Oleh <a href="#">{{$blog->author}}</a></li>
-                                            <li><a href="#">{{$blog->category}}, {{$blog->tag}}</a></li>
+                                            <li>Oleh <a href="#">{{$blog->user->name}}</a></li>
+                                            <li><a href="#">{{$blog->category->name}}, {{$blog->tag->name}}</a></li>
                                         </ul>
                                     </div>
                                     <div class="right pull-right">

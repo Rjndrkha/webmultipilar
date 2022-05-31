@@ -18,9 +18,14 @@ class CreateBlogsTable extends Migration
             $table->string('title');
             $table->string('image');
             $table->text('content');
-            $table->string('category');
-            $table->string('tag');
-            $table->string('author');
+            // foreign key category_id
+            $table->foreignId('category_id');
+            // foreign key user_id
+            $table->foreignId('user_id');
+            // foreign key tag_id
+            $table->foreignId('tag_id');
+            //slug
+            $table->string('slug');
             $table->timestamps();
         });
     }

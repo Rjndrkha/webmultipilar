@@ -10,6 +10,22 @@ class Blog extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'image', 'content', 'category', 'tag', 'author'
+        'title', 'image', 'content', 'category_id', 'tag_id', 'user_id'
     ];
+
+    public function category()
+    {
+        return $this->belongsTo('App\Models\Category');
+    }
+
+    public function tag()
+    {
+        return $this->belongsTo('App\Models\Tag');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
+    }
+
 }

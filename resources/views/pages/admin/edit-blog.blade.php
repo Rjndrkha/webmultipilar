@@ -1,5 +1,5 @@
 <!-- edit blog -->
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <div class="container">
@@ -75,20 +75,7 @@
                                 @enderror
                             </div>
                         </div>
-                        <!-- form author -->
-                        <div class="form-group row">
-                            <label for="author" class="col-md-4 col-form-label text-md-right">{{ __('Author') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="author" type="text" class="form-control @error('author') is-invalid @enderror" name="author" value="{{ $blog->author }}" required autocomplete="author" autofocus>
-
-                                @error('author')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+                         
                         <!-- form tags -->
                      <div class="form-group row">
                             <label for="tag" class="col-md-4 col-form-label text-md-right">{{ __('Tag') }}</label>

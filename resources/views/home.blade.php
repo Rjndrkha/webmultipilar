@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <div class="container">
@@ -44,9 +44,10 @@
                                             <tr>
                                                 <td>{{ $banner->title1 }}</td>
                                                 <td>{{ $banner->subtitle1 }}</td>
-                                                <td><img src="{{ asset('storage/'.$banner->image1) }}" width="100px" height="100px"></td>
+                                                <td><img src="{{ asset('storage/'.$banner->image1) }}{{$banner->image1
+                                                }}" width="100px" height="100px"></td>
                                                 <td>{{ $banner->title2 }}</td>
-                                                <td><img src="{{ asset('storage/'.$banner->image2) }}" width="100px" height="100px"></td>
+                                                <td><img src="" width="100px" height="100px"></td>
                                                 <td>
                                                     <a href="{{ route('banner.edit', $banner->id) }}" class="btn btn-warning">Edit</a>
                                                     
@@ -172,9 +173,9 @@
                                                                 <td><img src="{{asset('storage/'.$blog->image) }}" 
                                                                  width="100px" height="100px">
                                                                 <td>{{ $blog->content }}</td>
-                                                                <td>{{ $blog->category}}</td>
-                                                                <td>{{$blog->tag}}</td>
-                                                                <td>{{ $blog->author}}</td> 
+                                                                <td>{{ $blog->category->name}}</td>
+                                                                <td>{{$blog->tag->name}}</td>
+                                                                <td>{{ $blog->user->name}}</td> 
                                                                 <td>
                                                                  <a href="{{ route('blog.edit', $blog->id) }}" class="btn btn-warning">Edit</a>
                                                                  <form action="{{ route('blog.destroy', $blog->id) }}" method="POST">
