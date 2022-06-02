@@ -170,82 +170,34 @@
                             </div>
                         </a>
                         <div class="collapse submenu list-unstyled" id="pages" data-parent="#topAccordion">
-                            <div class="row">
+                            <div class="row" >
+
+                            
                                 <div class="col-lg-4">
                                     <ul class="list-unstyled">
                                         <li>
-                                            <a href="#ecommerce" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> ECOMMERCE <i class="flaticon-dot-three"></i> </a>
+                                            <a href="#ecommerce" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> Landing Page <i class="flaticon-dot-three"></i> </a>
                                             <ul class="collapse list-unstyled sub-submenu show" id="ecommerce">
                                                 <li>
-                                                    <a href="ecommerce_orders.html"> Orders </a>
+                                                    <a href="ecommerce_orders.html"> Banner </a>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce_product.html"> Products </a>
+                                                    <a href="ecommerce_product.html"> Service </a>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce_product_catalog.html"> Product Catalog </a>
-                                                </li>
-                                                <li class="sub-sub-submenu-list">
-                                                    <a href="#product-details" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" data-parent="#ecommerce"> Product Details <i class="flaticon-right-arrow"></i> </a>
-                                                    <ul class="collapse list-unstyled sub-submenu" id="product-details">
-                                                        <li>
-                                                            <a href="ecommerce_product_details_1.html"> Product Details 1 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="ecommerce_product_details_2.html"> Product Details 2 </a>
-                                                        </li>
-                                                    </ul>
+                                                    <a href="ecommerce_product.html"> Team </a>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce_addedit_product.html"> Add/Edit Products </a>
+                                                    <a href="ecommerce_product.html"> Blog </a>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce_addedit_categories.html"> Add/Edit Categories </a>
+                                                    <a href="ecommerce_product.html"> Testimonial </a>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce_view_cart.html"> View Cart </a>
+                                                    <a href="ecommerce_product.html"> Klien Kami </a>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce_view_payments.html"> View Payments </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_view_customers.html"> View Customers </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_checkout.html"> Checkout </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_invoices.html"> Invoice </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_shipments.html"> Shipments </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_products_cart.html"> Products in Cart </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_coupons.html"> Coupons </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_low_stock.html"> Low Stock </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_best_sellers.html"> Best Sellers </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_refunds.html"> Refunds </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_search_terms.html"> Search Terms </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_newsletters.html"> Newsletters </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_wizards.html"> Payment Wizard </a>
-                                                </li>
-                                                <li>
-                                                    <a href="ecommerce_reviews.html"> Reviews </a>
+                                                    <a href="ecommerce_product.html"> Angka Project </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -254,38 +206,21 @@
                                 <div class="col-lg-4">
                                     <ul class="list-unstyled">
                                         <li>
-                                            <a href="#page" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> PAGES <i class="flaticon-dot-three"></i> </a>
+                                            <a href="#page" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> Pages <i class="flaticon-dot-three"></i> </a>
                                             <ul class="collapse list-unstyled sub-submenu show" id="page">
                                                 <li>
-                                                    <a href="pages_blank_page.html"> Blank Page</a>
+                                                    <a href="pages_blank_page.html"> Tentang Kami Page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages_helpdesk.html"> Helpdesk </a>
+                                                    <a href="pages_helpdesk.html"> Produk Kami Page </a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages_contact_us.html"> Contact Form </a>
-                                                </li>
-                                                <li>
-                                                    <a href="pages_faq.html"> FAQ </a>
-                                                </li>
-                                                <li>
-                                                    <a href="pages_blog.html"> Blog </a>
-                                                </li>
-                                                <li>
-                                                    <a href="pages_privacy.html"> Privacy Policy </a>
-                                                </li>
-                                                <li>
-                                                    <a href="pages_cookie_consent.html"> Cookie Consent </a>
-                                                </li>
-                                                <li>
-                                                    <a href="pages_landing_page.html" target="_blank"> Landing Page </a>
-                                                </li>
-                                                <li>
-                                                    <a href="pages_coming_soon.html"> Coming Soon </a>
+                                                    <a href="pages_contact_us.html"> Berita / Blog </a>
                                                 </li>
 
+
                                                 <li class="sub-sub-submenu-list">
-                                                    <a href="#pages-error" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Error <i class="flaticon-right-arrow"></i> </a>
+                                                    <a href="#pages-error" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Halaman Tambahan jika ada <i class="flaticon-right-arrow"></i> </a>
                                                     <ul class="collapse list-unstyled sub-submenu" id="pages-error" data-parent="#pages">
                                                         <li>
                                                             <a href="pages_error404.html"> 404 1 </a>
@@ -293,92 +228,7 @@
                                                         <li>
                                                             <a href="pages_error404-2.html"> 404 2 </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="pages_error500.html"> 500 1 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="pages_error500-2.html"> 500 2 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="pages_error503.html"> 503 1 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="pages_error503-2.html"> 503 2 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="pages_maintenence.html"> Maintanence </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-4">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a href="#users" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> USERS <i class="flaticon-dot-three"></i> </a>
-                                            <ul class="collapse list-unstyled sub-submenu show" id="users">
-                                                <li>
-                                                    <a href="user_profile.html"> Profile </a>
-                                                </li>
-                                                <li>
-                                                    <a href="user_account_setting.html"> Account Settings </a>
-                                                </li>
-                                                <li class="sub-sub-submenu-list">
-                                                    <a href="#user-login" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Login <i class="flaticon-right-arrow"></i> </a>
-                                                    <ul class="collapse list-unstyled sub-submenu" id="user-login" data-parent="#users">
-                                                        <li>
-                                                            <a href="user_login_1.html"> Login 1 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="user_login_2.html"> Login 2 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="user_login_3.html"> Login 3 </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="sub-sub-submenu-list">
-                                                    <a href="#user-register" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Register <i class="flaticon-right-arrow"></i> </a>
-                                                    <ul class="collapse list-unstyled sub-submenu" id="user-register" data-parent="#users">
-                                                        <li>
-                                                            <a href="user_register_1.html"> Register 1 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="user_register_2.html"> Register 2 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="user_register_3.html"> Register 3 </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="sub-sub-submenu-list">
-                                                    <a href="#user-passRecovery" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Password Recovery <i class="flaticon-right-arrow"></i> </a>
-                                                    <ul class="collapse list-unstyled sub-submenu" id="user-passRecovery" data-parent="#users">
-                                                        <li>
-                                                            <a href="user_pass_recovery_1.html"> Password Recovery 1 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="user_pass_recovery_2.html"> Password Recovery 2 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="user_pass_recovery_3.html"> Password Recovery 3 </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="sub-sub-submenu-list">
-                                                    <a href="#user-lockscreen" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Lockscreen <i class="flaticon-right-arrow"></i> </a>
-                                                    <ul class="collapse list-unstyled sub-submenu" id="user-lockscreen" data-parent="#users">
-                                                        <li>
-                                                            <a href="user_lockscreen_1.html"> Lockscreen 1 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="user_lockscreen_2.html"> Lockscreen 2 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="user_lockscreen_3.html"> Lockscreen 3 </a>
-                                                        </li>
+
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -410,7 +260,7 @@
                             <div class="widget-header ">
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        
+
 
                                         <div class="col-md-7 col-sm-7 text-sm-left">
                                             <h4>User Database</h4>

@@ -212,7 +212,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="/blog">Berita / Blog</a></li>
-                                    <li><a href="mailto:cs@multipilarbalantika.co.id">>Hubungi Kami</a></li>
+                                    <li><a href="mailto:cs@multipilarbalantika.co.id">Hubungi Kami</a></li>
 
 
                                 </ul>
