@@ -26,7 +26,7 @@ class BlogController extends Controller
     {
         Blog::create([
             'title' => $request->title,
-            'image' => $request->image->store('images'),
+            'image' => $request->image->store('images/blog/'),
             'content' => $request->content,
             'category' => $request->category,
             'tag' => $request->tag,
@@ -55,7 +55,7 @@ class BlogController extends Controller
         $blog = Blog::find($id);
         $blog->update([
             'title' => $request->title,
-            'image' => $request->image->store('images'),
+            'image' => $request->image->store('images/blog/'),
             'content' => $request->content,
             'category' => $request->category,
             'tag' => $request->tag,

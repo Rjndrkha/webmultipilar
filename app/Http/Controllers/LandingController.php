@@ -10,6 +10,7 @@ use \App\Models\Blog;
 use \App\Models\Team;
 use \App\Models\Testimonial;
 use \App\Models\Gallery;
+use \App\Models\Count;
 
 
 
@@ -24,10 +25,12 @@ class LandingController extends Controller
         $blogs = Blog::all();
         $testimonials = Testimonial::all();
         $galleries = Gallery::all();
+        $counts = Count::all();
 
         return view('index', ['banners' => $banners,
                              'services' => $services, 
                              'teams' => $teams,
-                             'blogs' => $blogs,'testimonials' => $testimonials,'galleries' => $galleries,]);
+                             'blogs' => $blogs,'testimonials' => $testimonials,'galleries' => $galleries,
+                             'counts' => $counts]);
     }
 }
