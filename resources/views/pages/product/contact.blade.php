@@ -20,7 +20,11 @@
                     <input type="phone" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
-                    <button type="submit" class="form-control btn btn-primary">Submit</button>
+                    <label for="exampleInputPassword1" class="form-label">Apa yang anda tanyakan?</label>
+                    <textarea class="form-control" aria-label="Apa yang anda tanyakan?"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="form-control btn btn-primary">Kirim Pesan</button>
                 </div>
             </form>
         </div>
