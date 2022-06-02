@@ -39,8 +39,8 @@ class BannerController extends Controller
         $banner->update([
             'title1' => $request->title1,
             'title2' => $request->title2,
-            'image1' => $request->image1->store('images'),
-            'image2' => $request->image2->store('images'),
+            'image1' => $request->image1->store('images/banner/'),
+            'image2' => $request->image2->store('images/banner/'),
             'subtitle1' => $request->subtitle1,
             'description1' => $request->description1,
             'created_at' => $request->created_at,

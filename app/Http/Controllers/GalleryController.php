@@ -23,7 +23,7 @@ class GalleryController extends Controller
     {
         Gallery::create([
             'title' => $request->title,
-            'image' => $request->image->store('images'),
+            'image' => $request->image->store('images/gallery/'),
             'content' => $request->content,
             'category' => $request->category,
             'tag' => $request->tag,
@@ -49,7 +49,7 @@ class GalleryController extends Controller
         $gallery = Gallery::find($id);
         $gallery->update([
             'title' => $request->title,
-            'image' => $request->image->store('images'),
+            'image' => $request->image->store('images/gallery/'),
             'content' => $request->content,
             'category' => $request->category,
             'tag' => $request->tag,

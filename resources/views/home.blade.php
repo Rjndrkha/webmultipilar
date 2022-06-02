@@ -23,8 +23,6 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">Banners</h3>
-                                    <!-- create hide banner -->
-                                    <a href="#" class="btn btn-primary">Create</a>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
@@ -44,10 +42,9 @@
                                             <tr>
                                                 <td>{{ $banner->title1 }}</td>
                                                 <td>{{ $banner->subtitle1 }}</td>
-                                                <td><img src="{{ asset('storage/'.$banner->image1) }}{{$banner->image1
-                                                }}" width="100px" height="100px"></td>
+                                                <td><img src="{{ asset('storage/'.$banner->image1) }}" width="100px" height="100px"></td>
                                                 <td>{{ $banner->title2 }}</td>
-                                                <td><img src="" width="100px" height="100px"></td>
+                                                <td><img src="{{ asset('storage/'.$banner->image2) }}" width="100px" height="100px"></td>
                                                 <td>
                                                     <a href="{{ route('banner.edit', $banner->id) }}" class="btn btn-warning">Edit</a>
                                                     
@@ -276,6 +273,45 @@
                                             </tbody>
                                         </table>
                                     </div>
+
+                                    <!-- table count -->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h3 class="card-title">Count</h3>
+                                            
+                                        </div>
+                                        <!-- /.card-header -->
+                                        <div class="card-body">
+                                            <table id="example7" class="table table-bordered table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>No</th>
+                                                        <th>klien</th>
+                                                        <th>ahli</th>
+                                                        <th>symfoni</th>
+                                                        <th>mobile</th>
+                                                        <th>background</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach($counts as $count)
+                                                    <tr>
+                                                        <td>{{ $loop->iteration }}</td>
+                                                        <td>{{ $count->klien }}</td>
+                                                        <td>{{ $count->ahli }}</td>
+                                                        <td>{{ $count->symfoni }}</td>
+                                                        <td>{{ $count->mobile }}</td>
+                                                        <td><img src="{{asset('storage/'.$count->background)}}" width="100px" height="100px" ></td>
+                                                        <td>
+                                                            <a href="{{ route('count.edit', $count->id) }}" class="btn btn-warning">Edit</a>
+                                                           
+                                                        </td>
+                                                    </tr>
+                                                    @endforeach
+                                                </tbody>
+                                            </table>
+                                        </div>
                                 </div>
                         </div>
                     </div>

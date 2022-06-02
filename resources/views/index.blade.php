@@ -187,53 +187,60 @@
         <!--End smart approach area-->
 
         <!--Start fact counter area-->
-        <section class="fact-counter-area" style="background-image:url(landing/images/resources/fact-counter-bg.jpg);">
+        @foreach($counts as $count)
+        <section class="fact-counter-area" style="background-image:url({{asset('storage/'.$count->background)}});">
             <div class="container">
                 <div class="row">
+                    @foreach($counts as $count)
                     <!--Start single item-->
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="single-item text-center">
-                            <h1><span class="timer" data-from="1" data-to="33" data-speed="5000" data-refresh-interval="50">33</span></h1>
+                            <h1><span class="timer" data-from="1" data-to="{{$count->klien}}" data-speed="5000" data-refresh-interval="50"></span></h1>
                             <span class="border"></span>
                             <h3>Client Aktif</h3>
                         </div>
                     </div>
+                    @endforeach
 
                     <!--End single item-->
                     <!--Start single item-->
+                    @foreach($counts as $count)
                     <div class="col-md-3 col-sm-6 col-xs-12">
-
-
                         <div class="single-item text-center">
-                            <h1><span class="timer" data-from="1" data-to="33" data-speed="5000" data-refresh-interval="50">10</span></h1>
+                            <h1><span class="timer" data-from="1" data-to="{{$count->ahli}}" data-speed="5000" data-refresh-interval="50"></span></h1>
                             <span class="border"></span>
                             <h3>Tenaga Ahli</h3>
                         </div>
                     </div>
+                    @endforeach
                     <!--End single item-->
+                    @foreach($counts as $count)
                     <!--Start single item-->
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="single-item text-center">
-                            <h1><span class="timer" data-from="1" data-to="55" data-speed="5000" data-refresh-interval="50">55+</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
+                            <h1><span class="timer" data-from="1" data-to="{{$count->symfoni}}" data-speed="5000" data-refresh-interval="50">55+</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
                             <span class="border"></span>
                             <h3>Pengguna Symfoni Mobile</h3>
                         </div>
                     </div>
+                    @endforeach
                     <!--End single item-->
+                    @foreach($counts as $count)
                     <!--Start single item-->
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="single-item text-center">
-                            <h1><span class="timer" data-from="1" data-to="5" data-speed="5000" data-refresh-interval="50">5+</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
+                            <h1><span class="timer" data-from="1" data-to="{{$count->mobile}}" data-speed="5000" data-refresh-interval="50">5+</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
                             <span class="border"></span>
                             <h3>Mobile Apps untuk Nasabah</h3>
                         </div>
                     </div>
-
+                @endforeach
                     <!--End single item-->
 
                 </div>
             </div>
         </section>
+        @endforeach
 
 
         <!--Start team area-->

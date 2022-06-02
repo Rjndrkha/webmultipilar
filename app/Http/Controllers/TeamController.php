@@ -25,7 +25,7 @@ class TeamController extends Controller
 
         Team::create([
             'name' => $request->name,
-            'image' => $request->image->store('images'),
+            'image' => $request->image->store('images/team/'),
             'position' => $request->position,
         ]);
 
@@ -44,7 +44,7 @@ class TeamController extends Controller
         $team = \App\Models\Team::find($id);
         $team->update([
             'name' => $request->name,
-            'image' => $request->image->store('images'),
+            'image' => $request->image->store('images/team/'),
             'position' => $request->position,
         ]);
         return redirect('/home');

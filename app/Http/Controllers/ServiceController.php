@@ -22,7 +22,7 @@ class ServiceController extends Controller
     {
         \App\Models\Service::create([
             'title'=>$request->title,
-            'image'=>$request->image->store('images'),
+            'image'=>$request->image->store('images/service/'),
             'subtitle'=>$request->subtitle,
             'description'=>$request->description,
         ]);
@@ -39,7 +39,12 @@ class ServiceController extends Controller
     public function update(Request $request, $id)
     {
         $service = \App\Models\Service::find($id);
-        $service->update($request->all());
+        $service->update([
+            'title'=>$request->title,
+            'image'=>$request->image->store('images/service/'),
+            'subtitle'=>$request->subtitle,
+            'description'=>$request->description,
+        ]);
         return redirect('/home');
     }
 

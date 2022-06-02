@@ -98,17 +98,13 @@ Route::post('/home/gallery-destroy/{id}', [App\Http\Controllers\GalleryControlle
 // gallery update
 Route::post('/home/gallery-update/{id}', [App\Http\Controllers\GalleryController::class, 'update'])->name('gallery.update');
 
-// create count
-Route::get('/home/count-create', [App\Http\Controllers\CountController::class, 'create'])->name('count.create');
-// count store
-Route::post('/home/count-store', [App\Http\Controllers\CountController::class, 'store'])->name('count.store');
+
 // count edit
 Route::get('/home/count-edit/{id}', [App\Http\Controllers\CountController::class, 'edit'])->name('count.edit');
 // count destroy
 Route::post('/home/count-destroy/{id}', [App\Http\Controllers\CountController::class, 'destroy'])->name('count.destroy');
 // count update
 Route::post('/home/count-update/{id}', [App\Http\Controllers\CountController::class, 'update'])->name('count.update');
-
 
 
 
