@@ -16,11 +16,13 @@
 </head>
 
 <body>
-    <div class="login">
+    <div class="login" id="login">
         <div class="form-container">
             <form method="POST" action="{{ route('login') }}">
                 @csrf
-                <h2 class="text-center">Login</h2>
+                <a href="/login" class="center">
+                    <img src="landing/newimages/logo2.png" alt="logo">
+                </a>
                 <div class="form-group">
                     
 
@@ -63,6 +65,11 @@
 <style>
     .login {
         padding: 9% 0;
+    }
+
+    .center{
+        align-content: center;
+        padding-left: 50px;
     }
 
     @media (max-width: 576px) {
