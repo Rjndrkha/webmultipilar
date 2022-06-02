@@ -430,7 +430,7 @@
                                     <h5 style="margin-top: 25px; font-size: 16px">Berpengalaman lebih dari 13 tahun untuk membangun Core Banking System yang handal dan adaptif.</h5>
                                 </div>
                                 <div class="button pull-right">
-                                    <a class="thm-btn bg-clr1" href="#">Konsultasi Sekarang</a>
+                                    <a class="thm-btn bg-clr1" href="/konsultasi">Konsultasi Sekarang</a>
                                 </div>
                             </div>
                         </div>

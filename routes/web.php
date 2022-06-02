@@ -8,6 +8,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KonsultasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,9 +36,8 @@ Route::get('/products', [App\Http\Controllers\ProductController::class, 'index']
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('index');
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('index');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/contact', function() {
-    return view ('pages.product.contact');
-});
+Route::get('/konsultasi', [App\Http\Controllers\KonsultasiController::class, 'index'])->name('index');
+
 
 // banner edit
 Route::get('/dashboard/banner/edit/{id}', [App\Http\Controllers\BannerController::class, 'edit'])->name('banner.edit');

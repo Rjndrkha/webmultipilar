@@ -212,7 +212,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="/blog">Berita / Blog</a></li>
-                                    <li><a href="#contact">Hubungi Kami</a></li>
+                                    <li><a href="mailto:cs@multipilarbalantika.co.id">>Hubungi Kami</a></li>
 
 
                                 </ul>
@@ -238,7 +238,7 @@
                     </div>
                     <div class="col-md-2 col-sm-12 col-xs-12">
                         <div class="free-consulation-button pull-right">
-                            <a class="thm-btn bg-clr1" href="#">Konsultasi Gratis</a>
+                            <a class="thm-btn bg-clr1" href="/konsultasi">Konsultasi Gratis</a>
                         </div>
                     </div>
                 </div>

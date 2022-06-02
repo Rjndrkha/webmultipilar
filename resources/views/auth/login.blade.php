@@ -135,7 +135,7 @@
     }
 
     .login form .btn-primary {
-        background: #ff2b58;
+        background: #f42c2c;
         border: none;
         border-radius: 4px;
         padding: 11px;

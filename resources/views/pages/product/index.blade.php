@@ -32,9 +32,9 @@
         <!--End Preloader -->
 
         <!--Start Top bar area -->
-       
 
-       
+
+
 
         <!--Start breadcrumb area-->
         <section class="breadcrumb-area" style="background-image: url(landing/images/resources/breadcrumb-bg.jpg);">
@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
 
 
 
@@ -144,13 +144,28 @@
                             </div>
 
 
-                        </div>
-                    </div>
 
+                        </div>
+
+                    </div>
+                    <div class="row overview-content-pdbottom">
+                        <div class="col-md-7">
+                            <div class="overview-content">
+                                <div class="sec-title">
+                                    <h1>Overview</h1>
+                                    <span class="border"></span>
+                                </div>
+                                <div class="text">
+                                    <p>We have over 20 years of experience we’ll ensure you always get the best guidance. serve clients at every level of their organizations, seds in whatever capacity we can be sed most useful, whether as a trusted advisor to top management sed ut or ours hands-on coach for front line employees.</p>
+                                    <p>For more every engagement, we assemble team with the most appropriated experience and more expertis Our goal is too optimises our customers business seds uts relationships.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
         </section>
-    
+
         <!--End company overview area-->
 
         <!--Start footer area-->
