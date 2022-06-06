@@ -312,7 +312,7 @@
                     @foreach($blogs as $blog)
                     <!--Start single latest blog-->
                     <div class="col-md-4">
-                        <div class="single-blog-post">
+                        <div class="/blog">
                             <div class="img-holder">
                                 <img src="{{ asset('storage/'.$blog->image) }}" alt="Awesome Image">
                                 <div class="published-date">

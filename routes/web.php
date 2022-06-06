@@ -70,6 +70,10 @@ Route::post('/home/team-update/{id}', [App\Http\Controllers\TeamController::clas
 
 //create blog
 Route::get('/home/blog-create', [App\Http\Controllers\BlogController::class, 'create'])->name('blog.create');
+
+//blog detail
+Route::get('/blog1', [App\Http\Controllers\BlogController::class, 'blog1'])->name('blog.blog1');
+
 // blog store
 Route::post('/home/blog-store', [App\Http\Controllers\BlogController::class, 'store'])->name('blog.store');
 // blog edit
