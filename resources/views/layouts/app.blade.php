@@ -204,10 +204,10 @@
                                     </li>
                                     <li class="dropdown"><a href="/products">Produk Kami</a>
                                         <ul>
-                                            <li><a href="#">SimfoniBPR</a></li>
-                                            <li><a href="#">SimfoniLKM</a></li>
-                                            <li><a href="#">SimfoniBMT</a></li>
-                                            <li><a href="#">Simfoni Mobile</a></li>
+                                            <li><a href="/simfonibpr">SimfoniBPR</a></li>
+                                            <li><a href="/simfonilkm">SimfoniLKM</a></li>
+                                            <li><a href="/simfonibmt">SimfoniBMT</a></li>
+                                            <li><a href="/simfonimobile">Simfoni Mobile</a></li>
 
                                         </ul>
                                     </li>

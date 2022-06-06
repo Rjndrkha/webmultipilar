@@ -113,6 +113,12 @@ Route::post('/home/count-destroy/{id}', [App\Http\Controllers\CountController::c
 // count update
 Route::post('/home/count-update/{id}', [App\Http\Controllers\CountController::class, 'update'])->name('count.update');
 
+//page simfoni bpr, simfoni lkm, simfoni bmt & simfoni mobile
+Route::get('/simfonibpr', [App\Http\Controllers\ProductController::class, 'simfonibpr'])->name('product.simfonibpr');
+Route::get('/simfonilkm', [App\Http\Controllers\ProductController::class, 'simfonilkm'])->name('product.simfonilkm');
+Route::get('/simfonibmt', [App\Http\Controllers\ProductController::class, 'simfonibmt'])->name('product.simfonibmt');
+Route::get('/simfonimobile', [App\Http\Controllers\ProductController::class, 'simfonimobile'])->name('product.simfonimobile');
+
 
 
 
