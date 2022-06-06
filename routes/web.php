@@ -34,9 +34,13 @@ Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 Route::get('/about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('index');
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])->name('index');
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('index');
-Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('index');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/konsultasi', [App\Http\Controllers\KonsultasiController::class, 'index'])->name('index');
+
+
+// ROUTER NEW ADMIN PAGE 
+Route::get('/multipilar/admin', [App\Http\Controllers\DashboardController::class, 'index'])->name('index');
+Route::get('/multipilar/admin/banner', [App\Http\Controllers\DashboardController::class, 'indexbanner'])->name('banner');
 
 
 // banner edit
