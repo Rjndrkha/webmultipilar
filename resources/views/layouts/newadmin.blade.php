@@ -173,13 +173,13 @@
                                             <a href="#ecommerce" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> Landing Page <i class="flaticon-dot-three"></i> </a>
                                             <ul class="collapse list-unstyled sub-submenu show" id="ecommerce">
                                                 <li>
-                                                    <a href="ecommerce_orders.html"> Banner </a>
+                                                    <a href="/multipilar/admin/banner"> Banner </a>
                                                 </li>
                                                 <li>
                                                     <a href="ecommerce_product.html"> Service </a>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce_product.html"> Team </a>
+                                                    <a href="/multipilar/admin/team"> Team </a>
                                                 </li>
                                                 <li>
                                                     <a href="ecommerce_product.html"> Blog </a>

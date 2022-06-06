@@ -41,6 +41,7 @@ Route::get('/konsultasi', [App\Http\Controllers\KonsultasiController::class, 'in
 // ROUTER NEW ADMIN PAGE 
 Route::get('/multipilar/admin', [App\Http\Controllers\DashboardController::class, 'index'])->name('index');
 Route::get('/multipilar/admin/banner', [App\Http\Controllers\DashboardController::class, 'indexbanner'])->name('banner');
+Route::get('/multipilar/admin/team', [App\Http\Controllers\DashboardController::class, 'indexteam'])->name('team');
 
 
 // banner edit

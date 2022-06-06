@@ -2,12 +2,11 @@
 
 @section('content')
 
-<!--  BEGIN CONTENT PART  -->
-<div id="content">
+<div id="content" class="main-content">
     <div class="container">
         <div class="page-header">
             <div class="page-title">
-                <h3>Dashboard</h3>
+                <h3>Banner Panel Editor</h3>
             </div>
         </div>
 
@@ -20,7 +19,7 @@
 
 
                                 <div class="col-md-7 col-sm-7 text-sm-left">
-                                    <h4>User Database</h4>
+                                    <h4>Banner</h4>
                                     <button class="btn btn-gradient-warning btn-rounded">Add New User</button>
                                 </div>
                             </div>
@@ -33,40 +32,57 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Password</th>
+                                        <th>ID Team</th>
+                                        <th>Nama</th>
+                                        <th>Job Role</th>
                                         <th>Image</th>
-                                        <th>Status</th>
+                                        <th>Image Location</th>
+                                        <th>Action</th>
 
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach($teams as $team)
                                     <tr>
-                                        <td>Banner {{ Auth::user()->id }}</td>
-                                        <td>{{ Auth::user()->name }}</td>
-                                        <td><span class="badge badge-info badge-pill">{{ Auth::user()->email }}</span></td>
-                                        <td>{{ Auth::user()->password }}</td>
-
+                                        <td>Team {{ $team->id }}</td>
+                                        <td>{{ $team->name }}</td>
+                                        <td>{{ $team->position }}</td>
                                         <td>
-                                            <img src="dashboard/assets/img/90x90.jpg" class="img-fluid" alt="img-1" style="border-color: #3862f5;">
+                                            <img src="{{asset('storage/'.$team->image) }}" width="100px" height="100px">
+                                        </td>
+                                        <td>{{ $team->image }}
+
                                         </td>
 
                                         <td class="text-center">
                                             <div class="toolbar">
                                                 <div class="toolbar-toggle">...</div>
                                                 <ul class="toolbar-dropdown animated fadeInUp table-controls list-inline">
-                                                    <li class="list-inline-item"><a href="javascript:void(0);" class="bs-tooltip" data-original-title="View"><i class="flaticon-view-3"></i></a>
+
+                                                    <li class="list-inline-item">
+
+                                                        <a href="{{ route('team.edit', $team->id) }}" class="btn btn-warning">Edit</a>
+
                                                     </li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0);" class="bs-tooltip" data-original-title="Edit"><i class="flaticon-edit-5"></i></a>
-                                                    </li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0);" class="bs-tooltip" data-original-title="Remove"><i class="flaticon-delete-6"></i></a>
+                                                    <li class="list-inline-item">
+
+                                                        <form action="{{ route('team.destroy', $team->id) }}" method="POST">
+                                                            @csrf
+                                                            @method('POST')
+                                                            <button type="submit" class="btn btn-danger">Delete</button>
+
+
+                                                        </form>
+
+
                                                     </li>
                                                 </ul>
                                             </div>
                                         </td>
+
+
                                     </tr>
+                                    @endforeach
 
 
                                 </tbody>
@@ -89,12 +105,3 @@
         </div>
     </div>
 </div>
-<!--  END CONTENT PART  -->
-
-</div>
-
-
-
-</body>
-
-</html>
