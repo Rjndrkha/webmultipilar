@@ -32,8 +32,8 @@
                                                 <th>Title1</th>
                                                 <th>Subtittle1</th>
                                                 <th>Image1</th>
-                                                {{-- <th>Title2</th>
-                                                <th>Image2</th> --}}
+                                                <th>Title2</th>
+                                                <th>Image2</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -43,8 +43,8 @@
                                                 <td>{{ $banner->title1 }}</td>
                                                 <td>{{ $banner->subtitle1 }}</td>
                                                 <td><img src="{{ asset('storage/'.$banner->image1) }}" width="100px" height="100px"></td>
-                                                {{-- <td>{{ $banner->title2 }}</td>
-                                                <td><img src="{{ asset('storage/'.$banner->image2) }}" width="100px" height="100px"></td> --}}
+                                                <td>{{ $banner->title2 }}</td>
+                                                <td><img src="{{ asset('storage/'.$banner->image2) }}" width="100px" height="100px"></td>
                                                 <td>
                                                     <a href="{{ route('banner.edit', $banner->id) }}" class="btn btn-warning">Edit</a>
                                                     
