@@ -25,11 +25,6 @@ use App\Http\Controllers\KonsultasiController;
 
 Auth::routes();
 
-//TEST ROUTE ADMIN PAGE
-Route::get('/templateadmin', function () {
-    return view ('pages.admin.index');
-});
-
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 Route::get('/about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('index');
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])->name('index');
