@@ -37,6 +37,10 @@ Route::get('/konsultasi', [App\Http\Controllers\KonsultasiController::class, 'in
 Route::get('/multipilar/admin', [App\Http\Controllers\DashboardController::class, 'index'])->name('index');
 Route::get('/multipilar/admin/banner', [App\Http\Controllers\DashboardController::class, 'indexbanner'])->name('banner');
 Route::get('/multipilar/admin/team', [App\Http\Controllers\DashboardController::class, 'indexteam'])->name('team');
+Route::get('/multipilar/admin/blog', [App\Http\Controllers\DashboardController::class, 'indexblog'])->name('blog');
+Route::get('/multipilar/admin/testimonial', [App\Http\Controllers\DashboardController::class, 'indextestimonial'])->name('testimonial');
+Route::get('/multipilar/admin/gallery', [App\Http\Controllers\DashboardController::class, 'indexgallery'])->name('gallery');
+Route::get('/multipilar/admin/count', [App\Http\Controllers\DashboardController::class, 'indexcount'])->name('count');
 
 
 // banner edit

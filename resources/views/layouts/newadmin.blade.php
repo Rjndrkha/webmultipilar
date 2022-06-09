@@ -182,16 +182,16 @@
                                                     <a href="/multipilar/admin/team"> Team </a>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce_product.html"> Blog </a>
+                                                    <a href="/multipilar/admin/blog"> Blog </a>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce_product.html"> Testimonial </a>
+                                                    <a href="/multipilar/admin/testimonial"> Testimonial </a>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce_product.html"> Klien Kami </a>
+                                                    <a href="/multipilar/admin/gallery"> Klien Kami </a>
                                                 </li>
                                                 <li>
-                                                    <a href="ecommerce_product.html"> Angka Project </a>
+                                                    <a href="/multipilar/admin/count"> Angka Project </a>
                                                 </li>
                                             </ul>
                                         </li>
