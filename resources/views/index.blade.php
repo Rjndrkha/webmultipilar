@@ -58,7 +58,7 @@
                         <div class="tp-caption tp-resizeme" data-x="left" data-hoffset="0" data-y="top" data-voffset="358" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="2300">
                             <div class="slide-content-box">
                                 <div class="button">
-                                    <a class="thm-btn bg-clr1" href="#">Video Profil Kami</a>
+                                    <a class="thm-btn bg-clr1" href="https://www.youtube.com/watch?v=KeoZSoKH39k">Video Profil Kami</a>
                                 </div>
                             </div>
                         </div>
@@ -272,7 +272,7 @@
         <!--End team area-->
 
         <!--Start video gallery area-->
-        <section class="video-gallery-area">
+        <section class="video-gallery-area" id="layanan">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -289,7 +289,7 @@
                             <div class="overlay-gallery">
                                 <div class="icon-holder">
                                     <div class="icon">
-                                        <a class="html5lightbox" title="Assurance Video Gallery" href="https://www.youtube.com/watch?v=XOv7RmXi7VE"><img src="landing/images/icon/play-btn.png" alt="Play Button"></a>
+                                        <a class="html5lightbox" title="Assurance Video Gallery" href="https://www.youtube.com/watch?v=KeoZSoKH39k"><img src="landing/images/multipilar-slideshow.jpg" alt="Play Button"></a>
                                     </div>
                                 </div>
                             </div>
@@ -312,7 +312,7 @@
                     @foreach($blogs as $blog)
                     <!--Start single latest blog-->
                     <div class="col-md-4">
-                        <div class="single-blog-post">
+                        <div class="/blog">
                             <div class="img-holder">
                                 <img src="{{ asset('storage/'.$blog->image) }}" alt="Awesome Image">
                                 <div class="published-date">
@@ -323,13 +323,13 @@
                                 <div class="overlay-style-one">
                                     <div class="box">
                                         <div class="content">
-                                            <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            <a href="/blog"><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-holder">
-                                <a href="blog-single.html">
+                                <a href="/blog">
                                     <h3 class="blog-title">{{$blog->title}}</h3>
                                 </a>
                                 <div class="text">
@@ -430,7 +430,7 @@
                                     <h5 style="margin-top: 25px; font-size: 16px">Berpengalaman lebih dari 13 tahun untuk membangun Core Banking System yang handal dan adaptif.</h5>
                                 </div>
                                 <div class="button pull-right">
-                                    <a class="thm-btn bg-clr1" href="#">Konsultasi Sekarang</a>
+                                    <a class="thm-btn bg-clr1" href="/konsultasi">Konsultasi Sekarang</a>
                                 </div>
                             </div>
                         </div>

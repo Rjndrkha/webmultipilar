@@ -8,6 +8,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KonsultasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,17 +25,23 @@ use App\Http\Controllers\DashboardController;
 
 Auth::routes();
 
-//TEST ROUTE ADMIN PAGE
-Route::get('/templateadmin', function () {
-    return view ('pages.admin.index');
-});
-
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 Route::get('/about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('index');
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])->name('index');
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('index');
-Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('index');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/konsultasi', [App\Http\Controllers\KonsultasiController::class, 'index'])->name('index');
+
+
+// ROUTER NEW ADMIN PAGE 
+Route::get('/multipilar/admin', [App\Http\Controllers\DashboardController::class, 'index'])->name('index');
+Route::get('/multipilar/admin/banner', [App\Http\Controllers\DashboardController::class, 'indexbanner'])->name('banner');
+Route::get('/multipilar/admin/team', [App\Http\Controllers\DashboardController::class, 'indexteam'])->name('team');
+Route::get('/multipilar/admin/blog', [App\Http\Controllers\DashboardController::class, 'indexblog'])->name('blog');
+Route::get('/multipilar/admin/testimonial', [App\Http\Controllers\DashboardController::class, 'indextestimonial'])->name('testimonial');
+Route::get('/multipilar/admin/gallery', [App\Http\Controllers\DashboardController::class, 'indexgallery'])->name('gallery');
+Route::get('/multipilar/admin/count', [App\Http\Controllers\DashboardController::class, 'indexcount'])->name('count');
+
 
 // banner edit
 Route::get('/dashboard/banner/edit/{id}', [App\Http\Controllers\BannerController::class, 'edit'])->name('banner.edit');
@@ -67,6 +74,10 @@ Route::post('/home/team-update/{id}', [App\Http\Controllers\TeamController::clas
 
 //create blog
 Route::get('/home/blog-create', [App\Http\Controllers\BlogController::class, 'create'])->name('blog.create');
+
+//blog detail
+Route::get('/blog1', [App\Http\Controllers\BlogController::class, 'blog1'])->name('blog.blog1');
+
 // blog store
 Route::post('/home/blog-store', [App\Http\Controllers\BlogController::class, 'store'])->name('blog.store');
 // blog edit
@@ -105,6 +116,12 @@ Route::get('/home/count-edit/{id}', [App\Http\Controllers\CountController::class
 Route::post('/home/count-destroy/{id}', [App\Http\Controllers\CountController::class, 'destroy'])->name('count.destroy');
 // count update
 Route::post('/home/count-update/{id}', [App\Http\Controllers\CountController::class, 'update'])->name('count.update');
+
+//page simfoni bpr, simfoni lkm, simfoni bmt & simfoni mobile
+Route::get('/simfonibpr', [App\Http\Controllers\ProductController::class, 'simfonibpr'])->name('product.simfonibpr');
+Route::get('/simfonilkm', [App\Http\Controllers\ProductController::class, 'simfonilkm'])->name('product.simfonilkm');
+Route::get('/simfonibmt', [App\Http\Controllers\ProductController::class, 'simfonibmt'])->name('product.simfonibmt');
+Route::get('/simfonimobile', [App\Http\Controllers\ProductController::class, 'simfonimobile'])->name('product.simfonimobile');
 
 
 

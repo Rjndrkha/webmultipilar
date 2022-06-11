@@ -14,6 +14,10 @@ class BlogController extends Controller
     {
         return view('pages.blog.index');
     }
+
+    public function blog1(){
+        return view('pages.blog.blog1');
+    }
     
     public function create()
     {

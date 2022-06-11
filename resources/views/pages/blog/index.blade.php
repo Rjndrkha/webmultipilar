@@ -77,13 +77,13 @@
                                 <div class="overlay-style-one">
                                     <div class="box">
                                         <div class="content">
-                                            <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            <a href="/blog1"><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-holder">
-                                <a href="blog-single.html">
+                                <a href="/blog1">
                                     <h3 class="blog-title">The best service ever get</h3>
                                 </a>
                                 <div class="text">
@@ -117,13 +117,13 @@
                                 <div class="overlay-style-one">
                                     <div class="box">
                                         <div class="content">
-                                            <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            <a href="/blog1"><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-holder">
-                                <a href="blog-single.html">
+                                <a href="/blog1">
                                     <h3 class="blog-title">We never said impossible.</h3>
                                 </a>
                                 <div class="text">
@@ -157,13 +157,13 @@
                                 <div class="overlay-style-one">
                                     <div class="box">
                                         <div class="content">
-                                            <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            <a href="/blog1"><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-holder">
-                                <a href="blog-single.html">
+                                <a href="/blog1">
                                     <h3 class="blog-title">Latest consulting seminar</h3>
                                 </a>
                                 <div class="text">
@@ -197,13 +197,13 @@
                                 <div class="overlay-style-one">
                                     <div class="box">
                                         <div class="content">
-                                            <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            <a href="/blog1"><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-holder">
-                                <a href="blog-single.html">
+                                <a href="/blog1">
                                     <h3 class="blog-title">Latest consulting seminar.</h3>
                                 </a>
                                 <div class="text">
@@ -237,13 +237,13 @@
                                 <div class="overlay-style-one">
                                     <div class="box">
                                         <div class="content">
-                                            <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            <a href="/blog1"><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-holder">
-                                <a href="blog-single.html">
+                                <a href="/blog1">
                                     <h3 class="blog-title">The best service ever get.</h3>
                                 </a>
                                 <div class="text">
@@ -277,13 +277,13 @@
                                 <div class="overlay-style-one">
                                     <div class="box">
                                         <div class="content">
-                                            <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            <a href="/blog1"><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-holder">
-                                <a href="blog-single.html">
+                                <a href="/blog1">
                                     <h3 class="blog-title">We never said impossible.</h3>
                                 </a>
                                 <div class="text">
