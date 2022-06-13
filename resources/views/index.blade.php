@@ -444,7 +444,7 @@
                         <div class="single-footer-widget pd-bottom">
                             <div class="footer-logo">
                                 <a href="index.html">
-                                    <img src="landing/images/footer/footer-logo.png" alt="Awesome Footer Logo">
+                                    <img src="landing/newimages/logo2.png" alt="Awesome Footer Logo">
                                 </a>
                             </div>
                             <div class="our-info">
