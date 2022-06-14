@@ -53,8 +53,10 @@
                         <i class="mr-3 flaticon-user-11"></i> <span class="align-self-center">Profile</span>
                     </a>
 
-                    <a class="#" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">>
+                    <a class="#" data-confirm="Are you sure?" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();
+                                                     //return confirm('Are you sure?') ;
+                                                     ">
                         <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
                     </a>
 
@@ -119,7 +121,9 @@
 
                     <div class="dropdown-item dropdown-item-btn d-flex justify-content-around">
                         <a class="#" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">>
+                                                     document.getElementById('logout-form').submit();
+                                                     return confirm('Are you sure?');
+                                                     ">
                             <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
                         </a>
 
