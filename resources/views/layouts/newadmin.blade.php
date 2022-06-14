@@ -35,7 +35,8 @@
                     <a href="javascript:void(0);" class="nav-link sidebarCollapse d-inline-block" data-placement="bottom">
                         <i class="flaticon-menu-line-2"></i>
                     </a>
-                    <a href="index.html" class="ml-3"> <img src="dashboard/assets/img/logo-3.png" class="img-fluid" alt="logo"></a>
+                    <a href="/multipilar/admin" class="ml-3">
+                        <img src="asset('landing/newimages/logo2.png')" class="img-fluid" alt="logo"></a>
                 </div>
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle user d-inline-block float-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="media">
@@ -50,16 +51,8 @@
                     <a class="dropdown-item d-flex mt-5" href="user_profile.html">
                         <i class="mr-3 flaticon-user-11"></i> <span class="align-self-center">Profile</span>
                     </a>
-                    <a class="dropdown-item d-flex" href="apps_scheduler.html">
-                        <i class="mr-3 flaticon-calendar"></i> <span class="align-self-center">My Schedule</span>
-                    </a>
-                    <a class="dropdown-item d-flex" href="apps_mailbox.html">
-                        <i class="mr-3 flaticon-mail-22"></i> <span class="align-self-center">Inbox</span>
-                    </a>
-                    <a class="dropdown-item d-flex" href="user_lockscreen_1.html">
-                        <i class="mr-3 flaticon-lock-1"></i> <span class="align-self-center">Lock Screen</span>
-                    </a>
-                    <a href="user_login_1.html" class="dropdown-item dropdown-item-btn">
+                  
+                    <a href="{{ route('logout') }}" class="dropdown-item dropdown-item-btn">
                         <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
                     </a>
                 </div>
@@ -70,12 +63,10 @@
 
     <!--  BEGIN NAVBAR  -->
     <header class="desktop-nav header navbar fixed-top">
-        <div class="nav-logo mr-5 ml-4 d-lg-inline-block d-none">
-            <a href="index.html" class=""> <img src="dashboard/assets/img/logo-3.png" class="img-fluid" alt="logo"></a>
-        </div>
+
         <ul class="navbar-nav flex-row mr-auto">
             <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
-                <img src="landing/newimages/logo2.png" alt="Awesome Logo">
+                <img src="{{asset('landing/newimages/logo2.png')}}" alt="Awesome Logo">
             </li>
 
 
@@ -113,21 +104,13 @@
                         </div>
                     </div>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item d-flex" href="user_profile.html">
+                    <a class="dropdown-item d-flex" href="#">
                         <i class="mr-3 flaticon-user-11"></i> <span class="align-self-center">Profile Setting</span>
                     </a>
-                    <a class="dropdown-item d-flex" href="apps_scheduler.html">
-                        <i class="mr-3 flaticon-calendar"></i> <span class="align-self-center">Schedule</span>
-                    </a>
-                    <a class="dropdown-item d-flex" href="apps_mailbox.html">
-                        <i class="mr-3 flaticon-mail-22"></i> <span class="align-self-center">Inbox</span>
-                    </a>
-                    <a class="dropdown-item d-flex" href="user_lockscreen_1.html">
-                        <i class="mr-3 flaticon-lock-1"></i> <span class="align-self-center">Lock Screen</span>
-                    </a>
+                
 
                     <div class="dropdown-item dropdown-item-btn d-flex justify-content-around">
-                        <a class="" href="user_login_1.html">
+                        <a class="" href="{{ route('logout') }}">
                             <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
                         </a>
                     </div>
@@ -146,7 +129,8 @@
             <nav id="topbar">
                 <ul class="list-unstyled menu-categories d-lg-flex justify-content-lg-around mb-0" id="topAccordion">
                     <li class="menu">
-                        <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        
+                    <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <i class="flaticon-computer-6"></i>
                                 <span>Dashboard</span>
@@ -175,9 +159,7 @@
                                                 <li>
                                                     <a href="/multipilar/admin/banner"> Banner </a>
                                                 </li>
-                                                <li>
-                                                    <a href="ecommerce_product.html"> Service </a>
-                                                </li>
+                                              
                                                 <li>
                                                     <a href="/multipilar/admin/team"> Team </a>
                                                 </li>
@@ -203,27 +185,16 @@
                                             <a href="#page" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> Pages <i class="flaticon-dot-three"></i> </a>
                                             <ul class="collapse list-unstyled sub-submenu show" id="page">
                                                 <li>
-                                                    <a href="pages_blank_page.html"> Tentang Kami Page</a>
+                                                    <a href="#"> Tentang Kami Page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages_helpdesk.html"> Produk Kami Page </a>
+                                                    <a href="#"> Produk Kami Page </a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages_contact_us.html"> Berita / Blog </a>
+                                                    <a href="#"> Berita / Blog </a>
                                                 </li>
 
-                                                <li class="sub-sub-submenu-list">
-                                                    <a href="#pages-error" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Halaman Tambahan jika ada <i class="flaticon-right-arrow"></i> </a>
-                                                    <ul class="collapse list-unstyled sub-submenu" id="pages-error" data-parent="#pages">
-                                                        <li>
-                                                            <a href="pages_error404.html"> 404 1 </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="pages_error404-2.html"> 404 2 </a>
-                                                        </li>
-
-                                                    </ul>
-                                                </li>
+                                            
                                             </ul>
                                         </li>
                                     </ul>
@@ -243,10 +214,6 @@
                             </div>
                         </div>
                     </li>
-
-
-
-
 
                 </ul>
             </nav>

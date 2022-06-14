@@ -43,7 +43,7 @@
                 <div class="col-md-8 col-sm-12 col-xs-12">
                     <div class="top-info">
                         <ul>
-                            <li><span class="icon-signs"></span>ALAMAT MULTIPILAR</li>
+                            <li><span class="icon-signs"></span><li><span class="icon-signs"></span>JL.Permata Raya Kav. H4, Tugujaya Cihideung, Tasikmalaya City, West Java</li></li>
                             <li><span class="icon-clock"></span>Opening Time: Mon-Sat: 09.00 to 17.00</li>
                         </ul>
                     </div>
@@ -83,7 +83,7 @@
                 <div class="col-md-8 col-sm-12 col-xs-12">
                     <div class="top-info">
                         <ul>
-                            <li><span class="icon-signs"></span>ALAMAT MULTIPILAR</li>
+                            <li><span class="icon-signs"></span>JL.Permata Raya Kav. H4, Tugujaya Cihideung, Tasikmalaya City, West Java</li>
                             <li><span class="icon-clock"></span>Opening Time: Mon-Sat: 09.00 to 17.00</li>
                         </ul>
                     </div>

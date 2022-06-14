@@ -52,9 +52,7 @@
                         <li>About Us</li>
                     </ul>
                 </div>
-                <div class="right pull-right">
-                    <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>Share</a>
-                </div>
+               
             </div>
         </section>
         <!--End breadcrumb bottom area-->
@@ -204,38 +202,16 @@
                             </div>
                             <!--End single sidebar-->
                             <!--Start single sidebar-->
-                            <div class="single-sidebar">
-                                <div class="sidebar-testimonial">
-                                    <div class="text-box">
-                                        <p>They have got my project on time with competition well organized and very experienced team of professional engineers and good leaders.</p>
-                                    </div>
-                                    <div class="client-info">
-                                        <div class="img-box">
-                                            <img src="landing/images/testimonial/sidebar-testimonial.png" alt="Client Photo">
-                                        </div>
-                                        <div class="title-box">
-                                            <h4>Mark Vilton <span>- Villo Ceo</span></h4>
-                                            <div class="review-box">
-                                                <ul>
-                                                    <li><i class="fa fa-star"></i></li>
-                                                    <li><i class="fa fa-star"></i></li>
-                                                    <li><i class="fa fa-star"></i></li>
-                                                    <li><i class="fa fa-star"></i></li>
-                                                    <li><i class="fa fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <!--End single sidebar-->
                             <!--Start single sidebar-->
                             <div class="single-sidebar">
                                 <div class="business-enquiry">
                                     <h4>For Business Enquiry</h4>
                                     <p>
-                                        You can also send us an <a href="#">email</a> and we’ll get in touch shortly, or You can call to our toll free number<br>
-                                        <a href="#">(+91) 1800-700-6202.</a>
+                                        You can also send us an 
+                                        <a href="mailto:cs@multipilarbalantika.co.id">email</a> and we’ll get in touch shortly, or You can call to our toll free number<br>
+                                        <a href="#">(0265) 337 022</a>
                                     </p>
                                 </div>
                             </div>
