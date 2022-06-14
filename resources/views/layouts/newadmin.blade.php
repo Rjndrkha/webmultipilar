@@ -53,9 +53,15 @@
                         <i class="mr-3 flaticon-user-11"></i> <span class="align-self-center">Profile</span>
                     </a>
 
-                    <a href="{{ route('logout') }}" class="dropdown-item dropdown-item-btn">
+                    <a class="#" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">>
                         <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
                     </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+
+                    </form>
                 </div>
             </li>
         </ul>
@@ -69,7 +75,7 @@
             <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
                 <img src="{{asset('landing/newimages/logo2.png')}}" alt="Awesome Logo">
             </li>
-            
+
 
 
             <li class="nav-item ml-4 d-lg-none">
@@ -112,9 +118,16 @@
 
 
                     <div class="dropdown-item dropdown-item-btn d-flex justify-content-around">
-                        <a class="" href="{{ route('logout') }}">
+                        <a class="#" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">>
                             <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
                         </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+
+                        </form>
+
                     </div>
                 </div>
             </li>
