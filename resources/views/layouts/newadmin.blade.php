@@ -36,11 +36,12 @@
                         <i class="flaticon-menu-line-2"></i>
                     </a>
                     <a href="/multipilar/admin" class="ml-3">
-                        <img src="asset('landing/newimages/logo2.png')" class="img-fluid" alt="logo"></a>
+                        <img src="asset('landing/newimages/logo2.png')" class="img-fluid" alt="logo">
+                    </a>
                 </div>
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle user d-inline-block float-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="media">
-                        <img src="dashboard/assets/img/90x90.jpg" class="img-fluid mr-2" alt="admin-profile">
+                        <img src="{{asset('storage/images/profile/profile.png')}}" class="img-fluid mr-2" alt="admin-profile">
                         <div class="media-body align-self-center">
                             <h6 class="mb-1">{{ Auth::user()->name }}</h6>
                             <p class="mb-0">{{ Auth::user()->email }}</p>
@@ -51,7 +52,7 @@
                     <a class="dropdown-item d-flex mt-5" href="user_profile.html">
                         <i class="mr-3 flaticon-user-11"></i> <span class="align-self-center">Profile</span>
                     </a>
-                  
+
                     <a href="{{ route('logout') }}" class="dropdown-item dropdown-item-btn">
                         <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
                     </a>
@@ -68,6 +69,7 @@
             <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
                 <img src="{{asset('landing/newimages/logo2.png')}}" alt="Awesome Logo">
             </li>
+            
 
 
             <li class="nav-item ml-4 d-lg-none">
@@ -89,7 +91,7 @@
             <li class="nav-item dropdown user-profile-dropdown mr-5  d-lg-inline-block d-none">
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="user-profile-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="media">
-                        <img src="dashboard/assets/img/90x90.jpg" class="img-fluid mr-2" alt="admin-profile">
+                        <img src="{{asset('storage/images/profile/profile.png')}}" class="img-fluid mr-2" alt="admin-profile">
                         <div class="media-body align-self-center">
                             <h6 class="mb-1">{{ Auth::user()->name }}</h6>
                             <p class="mb-0">{{ Auth::user()->email }}</p>
@@ -107,7 +109,7 @@
                     <a class="dropdown-item d-flex" href="#">
                         <i class="mr-3 flaticon-user-11"></i> <span class="align-self-center">Profile Setting</span>
                     </a>
-                
+
 
                     <div class="dropdown-item dropdown-item-btn d-flex justify-content-around">
                         <a class="" href="{{ route('logout') }}">
@@ -129,8 +131,8 @@
             <nav id="topbar">
                 <ul class="list-unstyled menu-categories d-lg-flex justify-content-lg-around mb-0" id="topAccordion">
                     <li class="menu">
-                        
-                    <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+
+                        <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <i class="flaticon-computer-6"></i>
                                 <span>Dashboard</span>
@@ -159,7 +161,7 @@
                                                 <li>
                                                     <a href="/multipilar/admin/banner"> Banner </a>
                                                 </li>
-                                              
+
                                                 <li>
                                                     <a href="/multipilar/admin/team"> Team </a>
                                                 </li>
@@ -194,7 +196,7 @@
                                                     <a href="#"> Berita / Blog </a>
                                                 </li>
 
-                                            
+
                                             </ul>
                                         </li>
                                     </ul>

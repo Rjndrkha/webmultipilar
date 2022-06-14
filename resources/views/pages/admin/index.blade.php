@@ -44,13 +44,13 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Banner {{ Auth::user()->id }}</td>
+                                        <td>{{ Auth::user()->id }}</td>
                                         <td>{{ Auth::user()->name }}</td>
                                         <td><span class="badge badge-info badge-pill">{{ Auth::user()->email }}</span></td>
                                         <td>{{ Auth::user()->password }}</td>
 
                                         <td>
-                                            <img src="dashboard/assets/img/90x90.jpg" class="img-fluid" alt="img-1" style="border-color: #3862f5;">
+                                            <img src="{{asset('storage/images/profile/profile.png')}}" class="img-fluid" alt="img-1" style="border-color: #3862f5;">
                                         </td>
 
                                         <td class="text-center">
