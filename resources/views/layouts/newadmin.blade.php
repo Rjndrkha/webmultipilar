@@ -38,6 +38,7 @@
                     <a href="/multipilar/admin" class="ml-3">
                         <img src="asset('landing/newimages/logo2.png')" class="img-fluid" alt="logo">
                     </a>
+
                 </div>
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle user d-inline-block float-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="media">
@@ -53,10 +54,22 @@
                         <i class="mr-3 flaticon-user-11"></i> <span class="align-self-center">Profile</span>
                     </a>
 
+                    <a class="dropdown-item d-flex" href="apps_scheduler.html">
+                        <i class="mr-3 flaticon-calendar"></i> <span class="align-self-center">My Schedule</span>
+                    </a>
+                    <a class="dropdown-item d-flex" href="/login">
+                        <i class="mr-3 flaticon-mail-22"></i> <span class="align-self-center">Inbox</span>
+                    </a>
+                    <a class="dropdown-item d-flex" href="user_lockscreen_1.html">
+                        <i class="mr-3 flaticon-lock-1"></i> <span class="align-self-center">Lock Screen</span>
+                    </a>
+                    <a href="/login" class="dropdown-item dropdown-item-btn">
+
                     <a class="#" data-confirm="Are you sure?" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();
                                                      //return confirm('Are you sure?') ;
                                                      ">
+
                         <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
                     </a>
 
@@ -75,9 +88,11 @@
 
         <ul class="navbar-nav flex-row mr-auto">
             <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
-                <img src="{{asset('landing/newimages/logo2.png')}}" alt="Awesome Logo">
-            </li>
 
+                <img src="{{asset('landing/newimages/logo2.png')}}" alt="Awesome Logo">
+
+            </li>
+                   
 
 
             <li class="nav-item ml-4 d-lg-none">
@@ -120,6 +135,7 @@
 
 
                     <div class="dropdown-item dropdown-item-btn d-flex justify-content-around">
+
                         <a class="#" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();
                                                      return confirm('Are you sure?');
@@ -194,6 +210,9 @@
                                                 <li>
                                                     <a href="/multipilar/admin/count"> Angka Project </a>
                                                 </li>
+                                                <li>
+                                                    <a href="/multipilar/admin/contact"> Qna </a>
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -207,7 +226,9 @@
                                                     <a href="#"> Tentang Kami Page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"> Produk Kami Page </a>
+
+                                                    <a href="/multipilar/admin/product"> Produk Kami Page </a>
+
                                                 </li>
                                                 <li>
                                                     <a href="#"> Berita / Blog </a>

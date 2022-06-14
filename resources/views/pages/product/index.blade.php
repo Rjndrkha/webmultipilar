@@ -57,19 +57,23 @@
                         <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>Share</a>
                     </div>
                 </div>
-            </section>
-            <!--End breadcrumb bottom area-->
 
-            <!--Start company overview area-->
-            <section class="company-overview-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 pull-right">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="top-img-box">
-                                        <img src="landing/images/company-overview/top-image.jpg" alt="Awesome Image">
-                                    </div>
+            </div>
+        </section>
+        <!--End breadcrumb bottom area-->
+
+        <!--Start company overview area-->
+        <section class="company-overview-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 pull-right">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="top-img-box">
+                                    @foreach($products as $product)
+                                    <img src="{{ asset('storage/'.$product->image) }}" alt="Awesome Image">
+                                    @endforeach
+
                                 </div>
                             </div>
 
@@ -246,46 +250,22 @@
                                 </ul>
                             </div>
                         </div>
-                        <!--End single footer widget-->
-                        <!--Start single footer widget-->
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="single-footer-widget pd-top pd-left">
-                                <div class="title">
-                                    <h3>Kontak Kami</h3>
+
+                    </div>
+                    <div class="row overview-content-pdbottom">
+                        <div class="col-md-7">
+                            <div class="overview-content">
+                                <div class="sec-title">
+                                    <h1>Overview</h1>
+                                    <span class="border"></span>
                                 </div>
-                                <ul class="footer-contact-info">
-                                    <li>
-                                        <div class="icon-holder">
-                                            <span class="icon-world"></span>
-                                        </div>
-                                        <div class="text-holder">
-                                            <p>Jl. Permata Raya Blok H Kav. No. 4, Tugujaya, Kec. Cihideung, Kab.
-                                                Tasikmalaya<br>Jawa Barat 46115</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon-holder">
-                                            <span class="icon-technology-1"></span>
-                                        </div>
-                                        <div class="text-holder">
-                                            <p>Telepon: (0265) 2354583</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon-holder">
-                                            <span class="icon-letter-1 bottom-envelop"></span>
-                                        </div>
-                                        <div class="text-holder">
-                                            <p>cs@multipilarbalantika.co.id</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="footer-social-links">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                </ul>
+                                <div class="text">
+                                    @foreach($products as $product)
+                                    <p>
+                                        {{ $product->overview }}
+                                    </p>
+                                    @endforeach     
+
                             </div>
                         </div>
                         <!--End single footer widget-->

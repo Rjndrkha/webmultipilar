@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\Models\Consultation;
 
 class KonsultasiController extends Controller
 {
@@ -10,4 +11,7 @@ class KonsultasiController extends Controller
     {
         return view('pages.konsultasi.index');
     }
+
+
+
 }

@@ -25,27 +25,30 @@
         <div class="card" style="margin-top: 50px">
             <div class="card-body">
                 <h3 style="text-align: center">Hubungi Kami</h3>
-                <form>
-                    <div class="mb-3" style="margin-top: 10px">
-                        <label for="exampleInputEmail1" class="form-label">Nama</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <!-- form konsultasi -->
+                <form action="{{ route('consultation.store') }}" method="POST">
+                    @csrf
+                    @method('POST')
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" class="form-control" id="name" name="nama" placeholder="Nama">
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="exampleInputPassword1">
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">No Handphone</label>
-                        <input type="phone" class="form-control" id="exampleInputPassword1">
+                    <div class="form-group">
+                        <label for="phone">No Handphone</label>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="No. HP">
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Apa yang anda tanyakan?</label>
-                        <textarea class="form-control" aria-label="Apa yang anda tanyakan?"></textarea>
+                    <div class="form-group">
+                        <label for="message">Apa yang anda tanyakan?</label>
+                        <textarea class="form-control" id="message" name="pesan" rows="3"></textarea>
                     </div>
-                    <div class="mb-3">
-                        <button type="submit" class="form-control btn btn-primary">Kirim Pesan</button>
-                    </div>
+                    <button type="submit" class="form-control btn btn-primary">Kirim Pesan</button>
                 </form>
+
+                
             </div>
         </div>
     </div>
