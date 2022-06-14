@@ -37,7 +37,7 @@
 
 
         <!--Start breadcrumb area-->
-        <section class="breadcrumb-area" style="background-image: url(landing/images/resources/breadcrumb-bg.jpg);">
+        <section class="breadcrumb-area" style="background-image:url(images/product/product.jpg);">
             <div class="container text-center">
                 <h1>Products</h1>
             </div>
@@ -69,7 +69,9 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="top-img-box">
-                                    <img src="landing/images/company-overview/top-image.jpg" alt="Awesome Image">
+                                    @foreach($products as $product)
+                                    <img src="{{ asset('storage/'.$product->image) }}" alt="Awesome Image">
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -156,9 +158,11 @@
                                     <span class="border"></span>
                                 </div>
                                 <div class="text">
-                                    <p>We have over 20 years of experience we’ll ensure you always get the best guidance. serve clients at every level of their organizations, seds in whatever capacity we can be sed most useful, whether as a trusted advisor to top management sed ut or ours hands-on coach for front line employees.</p>
-                                    <p>For more every engagement, we assemble team with the most appropriated experience and more expertis Our goal is too optimises our customers business seds uts relationships.</p>
-                                </div>
+                                    @foreach($products as $product)
+                                    <p>
+                                        {{ $product->overview }}
+                                    </p>
+                                    @endforeach     
                             </div>
                         </div>
 

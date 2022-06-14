@@ -29,18 +29,25 @@ Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 Route::get('/about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('index');
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])->name('index');
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('index');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/konsultasi', [App\Http\Controllers\KonsultasiController::class, 'index'])->name('index');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/konsultasi', [App\Http\Controllers\KonsultasiController::class, 'index'])->name('kon');
 
 
 // ROUTER NEW ADMIN PAGE 
-Route::get('/multipilar/admin', [App\Http\Controllers\DashboardController::class, 'index'])->name('index');
+Route::get('/multipilar/admin', [App\Http\Controllers\DashboardController::class, 'index'])->name('home');
 Route::get('/multipilar/admin/banner', [App\Http\Controllers\DashboardController::class, 'indexbanner'])->name('banner');
 Route::get('/multipilar/admin/team', [App\Http\Controllers\DashboardController::class, 'indexteam'])->name('team');
 Route::get('/multipilar/admin/blog', [App\Http\Controllers\DashboardController::class, 'indexblog'])->name('blog');
 Route::get('/multipilar/admin/testimonial', [App\Http\Controllers\DashboardController::class, 'indextestimonial'])->name('testimonial');
 Route::get('/multipilar/admin/gallery', [App\Http\Controllers\DashboardController::class, 'indexgallery'])->name('gallery');
 Route::get('/multipilar/admin/count', [App\Http\Controllers\DashboardController::class, 'indexcount'])->name('count');
+Route::get('multipilar/admin/consultation', [App\Http\Controllers\DashboardController::class, 'indexconsultation'])->name('consultation');
+
+// product
+Route::get('/multipilar/admin/product', [App\Http\Controllers\DashboardController::class, 'indexproduct'])->name('indexproduct');
+Route::get('/multipilar/admin/product/create', [App\Http\Controllers\DashboardController::class, 'createproduct'])->name('createproduct');
+Route::get('/multipilar/admin/product/edit/{id}', [App\Http\Controllers\DashboardController::class, 'editproduct'])->name('product.edit');
+Route::get('/multipilar/admin/product/delete/{id}', [App\Http\Controllers\DashboardController::class, 'deleteproduct'])->name('product.delete');
 
 
 // banner edit
@@ -122,6 +129,19 @@ Route::get('/simfonibpr', [App\Http\Controllers\ProductController::class, 'simfo
 Route::get('/simfonilkm', [App\Http\Controllers\ProductController::class, 'simfonilkm'])->name('product.simfonilkm');
 Route::get('/simfonibmt', [App\Http\Controllers\ProductController::class, 'simfonibmt'])->name('product.simfonibmt');
 Route::get('/simfonimobile', [App\Http\Controllers\ProductController::class, 'simfonimobile'])->name('product.simfonimobile');
+
+// create consultation
+Route::get('/consultation-create', [App\Http\Controllers\ConsultationController::class, 'create'])->name('consultation.create');
+// consultation store
+Route::post('/home/consultation-store', [App\Http\Controllers\ConsultationController::class, 'store'])->name('consultation.store');
+// consultation edit
+Route::get('/home/consultation-edit/{id}', [App\Http\Controllers\ConsultationController::class, 'edit'])->name('consultation.edit');
+// consultation destroy
+Route::post('/home/consultation-destroy/{id}', [App\Http\Controllers\ConsultationController::class, 'destroy'])->name('consultation.destroy');
+// consultation update
+Route::post('/home/consultation-update/{id}', [App\Http\Controllers\ConsultationController::class, 'update'])->name('consultation.update');
+
+
 
 
 

@@ -9,9 +9,20 @@ use \App\Models\Blog;
 use \App\Models\Testimonial;
 use \App\Models\Gallery;
 use \App\Models\Count;
+use \App\Models\Consultation;
+use \App\Models\Service;
+use \App\Models\DataCount;
+use \App\Models\Product;
+
 
 class DashboardController extends Controller
 {
+    // middleware
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         return view('pages.admin.index');
@@ -56,5 +67,19 @@ class DashboardController extends Controller
         
         $counts = Count::all();
         return view('pages.admin.count', ['counts' => $counts]);
+    }
+
+    // index consultatin
+    public function indexconsultation()
+    {
+        $consultations = Consultation::all();
+        return view('pages.admin.consultation', ['consultations' => $consultations]);
+    }
+
+    // index product
+    public function indexproduct()
+    {
+        $products = Product::all();
+        return view('pages.admin.product',['products' => $products]);
     }
 }

@@ -11,7 +11,9 @@ use App\Models\Gallery;
 use App\Models\Service;
 use App\Models\Team;
 use App\Models\Count;
+use App\Models\Product;
 use Illuminate\Database\Seeder;
+
 
 
 use Illuminate\Support\Facades\File;
@@ -326,5 +328,25 @@ class DatabaseSeeder extends Seeder
         };
 
 
+    
+
+    // product seeder
+    $productfile = File::allFiles(public_path('images/product'));
+    foreach ($productfile as $key => $value) {
+        $file = pathinfo($value);
+            $filename = $file['filename'];
+            $extension = $file['extension'];
+            $base = $file['basename'];
+            $path = $file['dirname'];
+        
+            File::copy($path.'/'.$base, 'public/storage/images/product/'.$base);
+   
+            Product::create([
+                'banner'=>'images/product/'.$base,
+                'tittle'=>'Product ',
+                'image'=>'images/product/'.$base,
+                'overview'=>'We have over 20 years of experience we’ll ensure you always get the best guidance. serve clients at every level of their organizations,',
+            ]);
     }
-}
+
+    }}

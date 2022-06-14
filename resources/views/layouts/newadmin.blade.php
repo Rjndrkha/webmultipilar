@@ -36,6 +36,7 @@
                         <i class="flaticon-menu-line-2"></i>
                     </a>
                     <a href="index.html" class="ml-3"> <img src="dashboard/assets/img/logo-3.png" class="img-fluid" alt="logo"></a>
+                    
                 </div>
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle user d-inline-block float-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="media">
@@ -53,13 +54,13 @@
                     <a class="dropdown-item d-flex" href="apps_scheduler.html">
                         <i class="mr-3 flaticon-calendar"></i> <span class="align-self-center">My Schedule</span>
                     </a>
-                    <a class="dropdown-item d-flex" href="apps_mailbox.html">
+                    <a class="dropdown-item d-flex" href="/login">
                         <i class="mr-3 flaticon-mail-22"></i> <span class="align-self-center">Inbox</span>
                     </a>
                     <a class="dropdown-item d-flex" href="user_lockscreen_1.html">
                         <i class="mr-3 flaticon-lock-1"></i> <span class="align-self-center">Lock Screen</span>
                     </a>
-                    <a href="user_login_1.html" class="dropdown-item dropdown-item-btn">
+                    <a href="/login" class="dropdown-item dropdown-item-btn">
                         <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
                     </a>
                 </div>
@@ -75,9 +76,9 @@
         </div>
         <ul class="navbar-nav flex-row mr-auto">
             <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
-                <img src="landing/newimages/logo2.png" alt="Awesome Logo">
+                <img src="{" alt="Awesome Logo">
             </li>
-
+                   
 
             <li class="nav-item ml-4 d-lg-none">
                 <form class="form-inline search-full form-inline search animated-search" role="search">
@@ -127,9 +128,13 @@
                     </a>
 
                     <div class="dropdown-item dropdown-item-btn d-flex justify-content-around">
-                        <a class="" href="user_login_1.html">
+                        <a class="" href="{{ route('logout') }}"  onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
                             <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
                         </a>
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
                     </div>
                 </div>
             </li>
@@ -193,6 +198,9 @@
                                                 <li>
                                                     <a href="/multipilar/admin/count"> Angka Project </a>
                                                 </li>
+                                                <li>
+                                                    <a href="/multipilar/admin/contact"> Qna </a>
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -206,7 +214,7 @@
                                                     <a href="pages_blank_page.html"> Tentang Kami Page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages_helpdesk.html"> Produk Kami Page </a>
+                                                    <a href="/multipilar/admin/product"> Produk Kami Page </a>
                                                 </li>
                                                 <li>
                                                     <a href="pages_contact_us.html"> Berita / Blog </a>
