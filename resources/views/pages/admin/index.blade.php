@@ -11,7 +11,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="dashboard">
             <div class="col-xl-12 col-lg-12 col-md-12 col-12 layout-spacing">
                 <div class="statbox widget box">
                     <div class="widget-header ">
@@ -44,13 +44,13 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Banner {{ Auth::user()->id }}</td>
+                                        <td>{{ Auth::user()->id }}</td>
                                         <td>{{ Auth::user()->name }}</td>
                                         <td><span class="badge badge-info badge-pill">{{ Auth::user()->email }}</span></td>
                                         <td>{{ Auth::user()->password }}</td>
 
                                         <td>
-                                            <img src="dashboard/assets/img/90x90.jpg" class="img-fluid" alt="img-1" style="border-color: #3862f5;">
+                                            <img src="{{asset('storage/images/profile/profile.png')}}" class="img-fluid" alt="img-1" style="border-color: #3862f5;">
                                         </td>
 
                                         <td class="text-center">

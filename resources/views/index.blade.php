@@ -65,7 +65,7 @@
                         <div class="tp-caption tp-resizeme" data-x="left" data-hoffset="182" data-y="top" data-voffset="358" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="2600">
                             <div class="slide-content-box">
                                 <div class="button">
-                                    <a class="thm-btn bg-clr2" href="#">Hubungi Kami</a>
+                                    <a class="thm-btn bg-clr2" href="mailto:cs@multipilarbalantika.co.id">Hubungi Kami</a>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                         <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="75" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="2300">
                             <div class="slide-content-box middle-slide">
                                 <div class="button">
-                                    <a href="#">Ajukan Demo</a>
+                                    <a href="/konsultasi">Ajukan Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                                 <div class="overlay-style-one">
                                     <div class="box">
                                         <div class="content">
-                                            <a href="business-planning.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            <a href="/products"><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -444,7 +444,7 @@
                         <div class="single-footer-widget pd-bottom">
                             <div class="footer-logo">
                                 <a href="index.html">
-                                    <img src="landing/images/footer/footer-logo.png" alt="Awesome Footer Logo">
+                                    <img src="landing/newimages/logo2.png" alt="Awesome Footer Logo">
                                 </a>
                             </div>
                             <div class="our-info">
