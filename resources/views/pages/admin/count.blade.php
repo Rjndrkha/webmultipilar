@@ -6,7 +6,7 @@
     <div class="container">
         <div class="page-header">
             <div class="page-title">
-                <h3>Banner Panel Editor</h3>
+                <h3>Count Panel Editor</h3>
             </div>
         </div>
 
@@ -18,10 +18,6 @@
                             <div class="col-xl-12 col-md-12 col-sm-12 col-12">
 
 
-                                <div class="col-md-7 col-sm-7 text-sm-left">
-                                    <h4>Count</h4>
-                                    <button class="btn btn-gradient-warning btn-rounded">Add New Count</button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -42,36 +38,31 @@
 
                                     </tr>
                                 </thead>
-                                {{-- <tbody>
-                                    @foreach($banners as $banner)
+                                <tbody>
+                                    @foreach($counts as $count)
                                     <tr>
-                                        <td>Banner {{ $banner->id }}</td>
-                                        <td>{{ $banner->title1 }}</td>
-                                        <td>{{ $banner->subtitle1 }}</td>
-                                        <td>{{ $banner->image1 }}</td>
-                                       
-                                       
-                                        <td class="text-center">
-                                            <div class="toolbar">
-                                                <div class="toolbar-toggle">...</div>
-                                                <ul class="toolbar-dropdown animated fadeInUp table-controls list-inline">
+                                        <td>{{ $count->id }}</td>
+                                        <td>{{ $count->klien }}</td>
+                                        <td>{{ $count->ahli }}</td>
+                                        <td>{{ $count->symfoni }}</td>
+                                        <td>{{ $count->mobile }}</td>
 
-                                                    <li class="list-inline-item"><a href="{{ route('banner.edit', $banner->id) }}" class="bs-tooltip" data-original-title="Edit"><i class="flaticon-edit-5"></i></a>
-                                                    </li>
-                                                    <br>
-                                                    
-                                                    <li class="list-inline-item"><a href="javascript:void(0);" class="bs-tooltip" data-original-title="Delete"><i class="flaticon-delete-6"></i></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                        <td><img src="{{asset('storage/'.$count->background)}}" width="100px" height="100px"></td>
+                                        <td>
+                                            <a href="{{ route('count.edit', $count->id) }}" class="btn btn-warning">Edit</a>
+
                                         </td>
+
+
+
+                                      
 
 
                                     </tr>
                                     @endforeach
 
 
-                                </tbody> --}}
+                                </tbody>
                             </table>
                         </div>
                         <div class="pagination-section">

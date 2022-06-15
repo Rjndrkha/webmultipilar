@@ -31,7 +31,7 @@ class CountController extends Controller
             'mobile' => $request->mobile,
             'background' => $request->background->store('images/background/')
         ]);
-        return redirect()->route('home');
+        return redirect()->route('/multipilar/admin/count');
     }
 
 
