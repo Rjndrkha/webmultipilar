@@ -88,7 +88,7 @@ class DashboardController extends Controller
     {
         
         $galleries = Gallery::all();
-        return view('pages.admin.gallery', ['gallerys' => $galleries]);
+        return view('pages.admin.gallery', ['galleries' => $galleries]);
     }
 
     public function indexcount()

@@ -6,7 +6,7 @@
     <div class="container">
         <div class="page-header">
             <div class="page-title">
-                <h3>Banner Panel Editor</h3>
+                <h3>Testimonial Panel Editor</h3>
             </div>
         </div>
 

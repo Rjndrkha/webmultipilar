@@ -6,7 +6,7 @@
     <div class="container">
         <div class="page-header">
             <div class="page-title">
-                <h3>Banner Panel Editor</h3>
+                <h3>Gallery Panel Editor</h3>
             </div>
         </div>
 
@@ -20,7 +20,8 @@
 
                                 <div class="col-md-7 col-sm-7 text-sm-left">
                                     <h4>Gallery</h4>
-                                    <button class="btn btn-gradient-warning btn-rounded">Add New Gallery</button>
+                                    <a href="{{ route('gallery.create') }}" class="btn btn-gradient-warning btn-rounded">Add New Gallery</a>
+
                                 </div>
                             </div>
                         </div>
@@ -39,36 +40,42 @@
 
                                     </tr>
                                 </thead>
-                                {{-- <tbody>
-                                    @foreach($banners as $banner)
+                                <tbody>
+                                    @foreach($galleries as $gallery)
                                     <tr>
-                                        <td>Banner {{ $banner->id }}</td>
-                                        <td>{{ $banner->title1 }}</td>
-                                        <td>{{ $banner->subtitle1 }}</td>
-                                        <td>{{ $banner->image1 }}</td>
-                                       
-                                       
+                                        <td>Banner {{ $gallery->id }}</td>
+                                        <td>{{ $gallery->title }}</td>
+                                        <td><img src="{{asset('storage/'.$gallery->image) }}" width="100px" height="100px"></td>
+
                                         <td class="text-center">
                                             <div class="toolbar">
                                                 <div class="toolbar-toggle">...</div>
                                                 <ul class="toolbar-dropdown animated fadeInUp table-controls list-inline">
 
-                                                    <li class="list-inline-item"><a href="{{ route('banner.edit', $banner->id) }}" class="bs-tooltip" data-original-title="Edit"><i class="flaticon-edit-5"></i></a>
-                                                    </li>
+                                                    <a href="{{ route('gallery.edit', $gallery->id) }}" class="btn btn-warning">Edit</a>
+                                                    <form action="{{ route('gallery.destroy', $gallery->id) }}" method="POST">
+                                                        @csrf
+                                                        @method('POST')
+                                                        <button type="submit" class="btn btn-danger">Delete</button>
+
+                                                    </form>
+
                                                     <br>
-                                                    
-                                                    <li class="list-inline-item"><a href="javascript:void(0);" class="bs-tooltip" data-original-title="Delete"><i class="flaticon-delete-6"></i></a>
-                                                    </li>
+
+
                                                 </ul>
                                             </div>
                                         </td>
+
+
+
 
 
                                     </tr>
                                     @endforeach
 
 
-                                </tbody> --}}
+                                </tbody>
                             </table>
                         </div>
                         <div class="pagination-section">
