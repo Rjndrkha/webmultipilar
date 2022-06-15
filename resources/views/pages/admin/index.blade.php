@@ -21,7 +21,8 @@
 
                                 <div class="col-md-7 col-sm-7 text-sm-left">
                                     <h4>User Database</h4>
-                                    <button class="btn btn-gradient-warning btn-rounded">Add New User</button>
+                                    <a href="{{ route('adduser') }}" class="btn btn-gradient-warning btn-rounded">Add New User</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -42,12 +43,13 @@
 
                                     </tr>
                                 </thead>
+                                @foreach($users as $user)
                                 <tbody>
                                     <tr>
-                                        <td>{{ Auth::user()->id }}</td>
-                                        <td>{{ Auth::user()->name }}</td>
-                                        <td><span class="badge badge-info badge-pill">{{ Auth::user()->email }}</span></td>
-                                        <td>{{ Auth::user()->password }}</td>
+                                        <td>{{ $user->id }}</td>
+                                        <td>{{ $user->name }}</td>
+                                        <td><span class="badge badge-info badge-pill">{{ $user->email }}</span></td>
+                                        <td>{{ $user->password }}</td>
 
                                         <td>
                                             <img src="{{asset('storage/images/profile/profile.png')}}" class="img-fluid" alt="img-1" style="border-color: #3862f5;">
@@ -70,6 +72,7 @@
 
 
                                 </tbody>
+                                @endforeach
                             </table>
                         </div>
                         <div class="pagination-section">

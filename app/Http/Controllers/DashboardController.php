@@ -12,8 +12,17 @@ use \App\Models\Count;
 use \App\Models\Consultation;
 use \App\Models\Service;
 use \App\Models\DataCount;
+use \App\Models\User;
 use \App\Models\Product;
+use GuzzleHttp\Promise\Create;
 
+use App\Http\Controllers\Controller;
+use App\Providers\RouteServiceProvider;
+
+use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+use function GuzzleHttp\Promise\all;
 
 class DashboardController extends Controller
 {
@@ -25,7 +34,28 @@ class DashboardController extends Controller
 
     public function index()
     {
-        return view('pages.admin.index');
+        $user = User::all();
+        return view('pages.admin.index',['users' => $user,]);
+        
+    }
+
+    public function storeuserr()
+    {
+        
+        return view('pages.admin.adduser');
+    }
+
+
+    public function storeuser(Request $request)
+    {
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request['password']),
+        ]);
+
+       
+        return redirect('/multipilar/admin');
     }
 
     public function indexbanner()

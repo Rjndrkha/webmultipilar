@@ -49,6 +49,14 @@ Route::get('/multipilar/admin/product/create', [App\Http\Controllers\DashboardCo
 Route::get('/multipilar/admin/product/edit/{id}', [App\Http\Controllers\DashboardController::class, 'editproduct'])->name('product.edit');
 Route::get('/multipilar/admin/product/delete/{id}', [App\Http\Controllers\DashboardController::class, 'deleteproduct'])->name('product.delete');
 
+//ADD NEW USER 
+Route::get('/multipilar/admin/add/user', [App\Http\Controllers\DashboardController::class, 'storeuserr'])->name('adduser');
+Route::post('/multipilar/admin/add/user/store', [App\Http\Controllers\DashboardController::class, 'storeuser'])->name('user.store');
+
+
+
+
+
 
 // banner edit
 Route::get('/dashboard/banner/edit/{id}', [App\Http\Controllers\BannerController::class, 'edit'])->name('banner.edit');
