@@ -18,6 +18,8 @@ class CreateConsultationsTable extends Migration
             $table->string('nama');
             $table->string('email');
             $table->string('phone');
+            $table->string('instansi');
+            $table->string('jabatan');
             $table->string('pesan');
             $table->timestamps();
         });

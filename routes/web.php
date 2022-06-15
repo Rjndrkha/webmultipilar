@@ -142,12 +142,10 @@ Route::get('/simfonimobile', [App\Http\Controllers\ProductController::class, 'si
 Route::get('/consultation-create', [App\Http\Controllers\ConsultationController::class, 'create'])->name('consultation.create');
 // consultation store
 Route::post('/home/consultation-store', [App\Http\Controllers\ConsultationController::class, 'store'])->name('consultation.store');
-// consultation edit
-Route::get('/home/consultation-edit/{id}', [App\Http\Controllers\ConsultationController::class, 'edit'])->name('consultation.edit');
+
 // consultation destroy
 Route::post('/home/consultation-destroy/{id}', [App\Http\Controllers\ConsultationController::class, 'destroy'])->name('consultation.destroy');
-// consultation update
-Route::post('/home/consultation-update/{id}', [App\Http\Controllers\ConsultationController::class, 'update'])->name('consultation.update');
+
 
 
 

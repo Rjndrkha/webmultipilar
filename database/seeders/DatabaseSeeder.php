@@ -72,6 +72,17 @@ class DatabaseSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
+        DB::table('consultations')->insert([
+            'nama' => 'Fauzi Sofyan',
+            'email' => 'Fauzi@gmail.com',
+            'phone' => '089111111',
+            'instansi' => 'Adinusa',
+            'jabatan' => 'CEO',
+            'pesan' => 'Berapa Harga Untuk Development ...',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
 
         // service seeder
 

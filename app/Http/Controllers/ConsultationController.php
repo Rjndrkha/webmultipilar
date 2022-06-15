@@ -21,6 +21,13 @@ class ConsultationController extends Controller
         return redirect('/konsultasi')->with('success', 'Pesan anda telah terkirim');
     }
 
+    public function destroy($id)
+    {
+        $consultation = Consultation::find($id);
+        $consultation->delete();
+        return redirect('/multipilar/admin');
+    }
+
 
 
 }

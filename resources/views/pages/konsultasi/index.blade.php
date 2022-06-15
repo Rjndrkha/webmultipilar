@@ -42,6 +42,14 @@
                         <input type="text" class="form-control" id="phone" name="phone" placeholder="No. HP">
                     </div>
                     <div class="form-group">
+                        <label for="instansi">Instansi</label>
+                        <input type="text" class="form-control" id="instansi" name="instansi" placeholder="Instansi">
+                    </div>
+                    <div class="form-group">
+                        <label for="jabatan">Jabatan</label>
+                        <input type="text" class="form-control" id="jabatan" name="jabatan" placeholder="Jabatan">
+                    </div>
+                    <div class="form-group">
                         <label for="message">Apa yang anda tanyakan?</label>
                         <textarea class="form-control" id="message" name="pesan" rows="3"></textarea>
                     </div>

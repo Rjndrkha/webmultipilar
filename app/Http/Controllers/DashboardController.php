@@ -35,8 +35,11 @@ class DashboardController extends Controller
     //CRUD ADD USER 
     public function index()
     {
+        $consultations = Consultation::all();
         $user = User::all();
-        return view('pages.admin.index',['users' => $user,]);
+        return view('pages.admin.index',[
+        'users' => $user,
+        'consultations' => $consultations,]);
         
     }
     public function storeuserr()

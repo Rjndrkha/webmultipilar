@@ -9,5 +9,5 @@ class Consultation extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nama', 'email', 'phone', 'pesan'];
+    protected $fillable = ['nama', 'email', 'phone', 'instansi', 'jabatan','pesan'];
 }
