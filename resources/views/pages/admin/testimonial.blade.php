@@ -20,7 +20,10 @@
 
                                 <div class="col-md-7 col-sm-7 text-sm-left">
                                     <h4>Testimonial</h4>
-                                    <button class="btn btn-gradient-warning btn-rounded">Add New Testimonial</button>
+                                    <a href="{{ route('testimonial.create') }}" class="btn btn-gradient-warning btn-rounded">
+                                    Add New Testimonial</a>
+                                                        
+                                    
                                 </div>
                             </div>
                         </div>
@@ -41,26 +44,31 @@
 
                                     </tr>
                                 </thead>
-                                {{-- <tbody>
-                                    @foreach($banners as $banner)
+                                 <tbody>
+                                    @foreach($testimonials as $testimonial)
                                     <tr>
-                                        <td>Banner {{ $banner->id }}</td>
-                                        <td>{{ $banner->title1 }}</td>
-                                        <td>{{ $banner->subtitle1 }}</td>
-                                        <td>{{ $banner->image1 }}</td>
-                                       
+                                        <td>{{ $testimonial->id }}</td>
+                                        <td>{{ $testimonial->name }}</td>
+                                        <td><img src="{{asset('storage/'.$testimonial->image) }}" width="100px" height="100px"></td>
+                                        <td>{{ $testimonial->address }}</td>
+                                        <td>{{ $testimonial->description }}</td>
                                        
                                         <td class="text-center">
                                             <div class="toolbar">
                                                 <div class="toolbar-toggle">...</div>
                                                 <ul class="toolbar-dropdown animated fadeInUp table-controls list-inline">
 
-                                                    <li class="list-inline-item"><a href="{{ route('banner.edit', $banner->id) }}" class="bs-tooltip" data-original-title="Edit"><i class="flaticon-edit-5"></i></a>
-                                                    </li>
+                                                    <a href="{{ route('testimonial.edit', $testimonial->id) }}" class="btn btn-warning">Edit</a>
+                                                    <form action="{{ route('testimonial.destroy', $testimonial->id) }}" method="POST">
+                                                        @csrf
+                                                        @method('POST')
+                                                        <button type="submit" class="btn btn-danger">Delete</button>
+
+                                                    </form>
+                                                   
                                                     <br>
+
                                                     
-                                                    <li class="list-inline-item"><a href="javascript:void(0);" class="bs-tooltip" data-original-title="Delete"><i class="flaticon-delete-6"></i></a>
-                                                    </li>
                                                 </ul>
                                             </div>
                                         </td>
@@ -70,7 +78,7 @@
                                     @endforeach
 
 
-                                </tbody> --}}
+                                </tbody> 
                             </table>
                         </div>
                         <div class="pagination-section">

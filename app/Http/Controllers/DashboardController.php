@@ -32,20 +32,18 @@ class DashboardController extends Controller
         $this->middleware('auth');
     }
 
+    //CRUD ADD USER 
     public function index()
     {
         $user = User::all();
         return view('pages.admin.index',['users' => $user,]);
         
     }
-
     public function storeuserr()
     {
         
         return view('pages.admin.adduser');
     }
-
-
     public function storeuser(Request $request)
     {
         User::create([
@@ -57,6 +55,7 @@ class DashboardController extends Controller
        
         return redirect('/multipilar/admin');
     }
+    //END CRUD USER 
 
     public function indexbanner()
     {

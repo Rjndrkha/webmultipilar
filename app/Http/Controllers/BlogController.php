@@ -36,7 +36,7 @@ class BlogController extends Controller
             'tag' => $request->tag,
             'author' => $request->author
         ]);
-        return redirect('/home');
+        return redirect('/multipilar/admin/blog');
     }
     
     public function show($id)
@@ -66,14 +66,14 @@ class BlogController extends Controller
             'author' => $request->author,
             'updated_at' => now().' '.now()->format('H:i:s')
         ]);
-        return redirect('/home');
+        return redirect('/multipilar/admin/blog');
     }
     
     public function destroy($id)
     {
         $blog = Blog::find($id);
         $blog->delete();
-        return redirect('/home');
+        return redirect('/multipilar/admin/blog');
     }
 
 }
