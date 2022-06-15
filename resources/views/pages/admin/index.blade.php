@@ -59,9 +59,20 @@
                                             <form action="{{ route('consultation.destroy', $consultation->id) }}" method="POST">
                                                 @csrf
                                                 @method('POST')
-                                                <button type="submit" class="btn btn-warning">Terbaca</button>
+                                                <button type="submit" onclick="confirmation()" class="btn btn-warning">Terbaca</button>
 
                                             </form>
+                                            <script>
+                                                function confirmation() {
+                                                    var txt;
+                                                    if (confirm("Data Akan Terkirim")) {
+                                                        txt = "Yes";
+                                                    } else {
+                                                        return false;
+                                                    }
+
+                                                }
+                                            </script>
                                         </td>
 
 
