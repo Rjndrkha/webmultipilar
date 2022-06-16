@@ -10,8 +10,8 @@ class CountController extends Controller
     
     public function index()
     {
-        $count = Count::first();
-        return view('count', compact('count'));
+        $counts = Count::all();
+        return view('pages.admin.count', ['counts' => $counts]);
     }
 
 

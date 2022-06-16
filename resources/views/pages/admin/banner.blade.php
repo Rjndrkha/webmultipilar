@@ -20,7 +20,6 @@
 
                                 <div class="col-md-7 col-sm-7 text-sm-left">
                                     <h4>Banner</h4>
-                                    <button class="btn btn-gradient-warning btn-rounded">Add New User</button>
                                 </div>
                             </div>
                         </div>
@@ -56,10 +55,6 @@
 
                                                     <li class="list-inline-item"><a href="{{ route('banner.edit', $banner->id) }}" class="bs-tooltip" data-original-title="Edit"><i class="flaticon-edit-5"></i></a>
                                                     </li>
-                                                    <br>
-                                                    
-                                                    <li class="list-inline-item"><a href="javascript:void(0);" class="bs-tooltip" data-original-title="Delete"><i class="flaticon-delete-6"></i></a>
-                                                    </li>
                                                 </ul>
                                             </div>
                                         </td>
@@ -89,3 +84,4 @@
         </div>
     </div>
 </div>
+@endsection

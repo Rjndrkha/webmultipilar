@@ -54,10 +54,6 @@
                                         </td>
 
 
-
-                                      
-
-
                                     </tr>
                                     @endforeach
 

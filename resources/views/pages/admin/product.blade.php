@@ -34,7 +34,7 @@
                                                 <td>{{ $product->banner }}</td>
                                                 <td>
                                                     <a href="{{ route('product.edit', $product->id) }}" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i> Edit</a>
-                                                    <a href="{{ route('product.delete', $product->id) }}" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                                                    <a href="{{ route('product.destroy', $product->id) }}" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i> Delete</a>
                                                 </td>
                                             </tr>
                                         @endforeach
