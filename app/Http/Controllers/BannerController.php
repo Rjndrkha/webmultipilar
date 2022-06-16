@@ -16,15 +16,6 @@ class BannerController extends Controller
     }
 
 
-    //post banner
-    public function postBanner(Request $request)
-    {
-        
-        Banner::create($request->all());
-        return redirect('/home');
-        
-    }
-
     // edit
     public function edit($id)
     {
@@ -46,7 +37,7 @@ class BannerController extends Controller
             'created_at' => $request->created_at,
             'updated_at' => $request->updated_at,
         ]);
-        return redirect('/home');
+        return redirect('/multipilar/admin/banner');
     }
 
 }

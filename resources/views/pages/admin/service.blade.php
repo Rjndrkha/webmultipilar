@@ -6,7 +6,7 @@
     <div class="container">
         <div class="page-header">
             <div class="page-title">
-                <h3>Team Panel Editor</h3>
+                <h3>Service Panel Editor</h3>
             </div>
         </div>
 
@@ -19,8 +19,10 @@
 
 
                                 <div class="col-md-7 col-sm-7 text-sm-left">
-                                    <h4>Team</h4>
-                                    <a href="{{ route('team.create') }}" class="btn btn-gradient-warning btn-rounded">Create Team</a>
+                                    <h4>Service</h4>
+                                    <!-- create -->
+                                    <a href="{{ route('service.create') }}" class="btn btn-primary">Create</a>
+
                                 </div>
                             </div>
                         </div>
@@ -32,49 +34,40 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>ID Team</th>
-                                        <th>Nama</th>
-                                        <th>Job Role</th>
+                                        <th>ID Banner</th>
+                                        <th>Title</th>
+                                        <th>Subtitle</th>
                                         <th>Image</th>
-                                        <th>Image Location</th>
+                                        <th>description</th>
                                         <th>Action</th>
 
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($teams as $team)
+                                    @foreach($services as $service)
                                     <tr>
-                                        <td>Team {{ $team->id }}</td>
-                                        <td>{{ $team->name }}</td>
-                                        <td>{{ $team->position }}</td>
-                                        <td>
-                                            <img src="{{asset('storage/'.$team->image) }}" width="100px" height="100px">
-                                        </td>
-                                        <td>{{ $team->image }}
-
-                                        </td>
-
+                                        <td>Service {{ $service->id }}</td>
+                                        <td>{{ $service->title }}</td>
+                                        <td>{{ $service->subtitle }}</td>
+                                        <td>{{ $service->image }}</td>
+                                        <td>{{ $service->description }}</td>
+                                       
+                                       
                                         <td class="text-center">
                                             <div class="toolbar">
                                                 <div class="toolbar-toggle">...</div>
                                                 <ul class="toolbar-dropdown animated fadeInUp table-controls list-inline">
 
-                                                    <li class="list-inline-item">
-
-                                                        <a href="{{ route('team.edit', $team->id) }}" class="btn btn-warning">Edit</a>
-
+                                                    <li class="list-inline-item"><a href="{{ route('service.edit', $service->id) }}" class="bs-tooltip" data-original-title="Edit"><i class="flaticon-edit-5"></i></a>
                                                     </li>
-                                                    <li class="list-inline-item">
 
-                                                        <form action="{{ route('team.destroy', $team->id) }}" method="POST">
+                                                    <!-- destroy -->
+                                                    <li class="list-inline-item">
+                                                        <form action="{{ route('service.destroy', $service->id) }}" method="POST">
                                                             @csrf
                                                             @method('POST')
-                                                            <button type="submit" class="btn btn-danger">Delete</button>
-
-
+                                                            <button type="submit" class="bs-tooltip" data-original-title="Delete"><i class="flaticon-delete-2"></i></button>
                                                         </form>
-
-
                                                     </li>
                                                 </ul>
                                             </div>

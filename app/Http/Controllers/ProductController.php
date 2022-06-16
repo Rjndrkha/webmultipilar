@@ -11,14 +11,14 @@ class ProductController extends Controller
     {   
         $products = Product::all();
 
-        return view('pages.product.index',['products' => $products]);
+        return view('pages.admin.product',['products' => $products]);
     }
 
     // edit
     public function edit($id)
     {
         $product = Product::find($id);
-        return view('pages.product.edit', ['product' => $product]);
+        return view('pages.admin.edit-product', ['product' => $product]);
     }
 
     // update
@@ -31,7 +31,15 @@ class ProductController extends Controller
             'image'=>$request->image->store('images/product/'),
             'overview'=>$request->overview,
         ]);
-        return redirect('/product');
+        return redirect('/multipilar/admin/product');
+    }
+
+    // destroy
+    public function destroy($id)
+    {
+        $product = Product::find($id);
+        $product->delete();
+        return redirect('/multipilar/admin/product');
     }
    
 

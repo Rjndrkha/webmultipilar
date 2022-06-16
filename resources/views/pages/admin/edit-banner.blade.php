@@ -1,8 +1,8 @@
 <!-- edit banner view -->
-@extends('layouts.admin')
+@extends('layouts.newadmin')
 
 @section('content')
-<div class="container">
+<div class="container" style="margin-top: 100px;">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -92,20 +92,6 @@
                                 <input id="image2" type="file" class="form-control @error('image2') is-invalid @enderror" name="image2" value="{{ $banner->image2 }}" required autocomplete="image2" autofocus>
 
                                 @error('image2')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                        <!-- form date -->
-                        <div class="form-group row">
-                            <label for="date" class="col-md-4 col-form-label text-md-right">{{ __('Date') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="date" type="date" class="form-control @error('date') is-invalid @enderror" name="date" value="{{ $banner->date }}" required autocomplete="date" autofocus>
-
-                                @error('date')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

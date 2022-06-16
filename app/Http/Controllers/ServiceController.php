@@ -10,7 +10,7 @@ class ServiceController extends Controller
     public function index()
     {
         $services = \App\Models\Service::all();
-        return view('index', ['services' => $services]);
+        return view('pages.admin.service', ['services' => $services]);
     }
 
     public function create()
@@ -27,7 +27,7 @@ class ServiceController extends Controller
             'description'=>$request->description,
         ]);
         
-        return redirect('/home');
+        return redirect('/multipilar/admin/service');
     }
 
     public function edit($id)
@@ -45,13 +45,13 @@ class ServiceController extends Controller
             'subtitle'=>$request->subtitle,
             'description'=>$request->description,
         ]);
-        return redirect('/home');
+        return redirect('/multipilar/admin/service');
     }
 
     public function destroy($id)
     {
         $service = \App\Models\Service::find($id);
         $service->delete();
-        return redirect('/home');
+        return redirect('/multipilar/admin/service');
     }
 }

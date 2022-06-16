@@ -194,6 +194,9 @@
                                                 <li>
                                                     <a href="/multipilar/admin/banner"> Banner </a>
                                                 </li>
+                                                <li>
+                                                    <a href="/multipilar/admin/service"> service </a>
+                                                </li>
 
                                                 <li>
                                                     <a href="/multipilar/admin/team"> Team </a>
@@ -229,7 +232,7 @@
 
                                                 </li>
                                                 <li>
-                                                    <a href="#"> Berita / Blog </a>
+                                                    <a href="/multipilar/admin/blog"> Berita / Blog </a>
                                                 </li>
 
 

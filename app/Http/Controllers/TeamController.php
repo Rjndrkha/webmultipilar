@@ -11,7 +11,7 @@ class TeamController extends Controller
     public function index()
     {
         $teams = \App\Models\Team::all();
-        return view('index', ['teams' => $teams]);
+        return view('pages.admin.team', ['teams' => $teams]);
     }
 
     public function create()
@@ -29,7 +29,7 @@ class TeamController extends Controller
             'position' => $request->position,
         ]);
 
-        return redirect()->route('home');
+        return redirect()->route('/multipilar/admin/team');
 
     }
 
@@ -47,13 +47,13 @@ class TeamController extends Controller
             'image' => $request->image->store('images/team/'),
             'position' => $request->position,
         ]);
-        return redirect('/home');
+        return redirect('/multipilar/admin/team');
     }
 
     public function destroy($id)
     {
         $team = \App\Models\Team::find($id);
         $team->delete();
-        return redirect('/home');
+        return redirect('/multipilar/admin/team');
     }
 }
