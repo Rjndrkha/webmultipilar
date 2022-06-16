@@ -14,6 +14,7 @@ use \App\Models\Service;
 use \App\Models\DataCount;
 use \App\Models\User;
 use \App\Models\Product;
+use Illuminate\Support\Facades\DB;
 use GuzzleHttp\Promise\Create;
 
 use App\Http\Controllers\Controller;
@@ -56,6 +57,26 @@ class DashboardController extends Controller
         ]);
 
        
+        return redirect('/multipilar/admin');
+    }
+
+    public function edit(Request $request)
+    {
+        $id = $request->get('id');
+        $users = User::find($id);
+        return view('pages.admin.edituser', compact("users"));
+    }
+
+    public function update(Request $request)
+    {
+        $id = $request->id;
+        $users = User::find($id);
+        $users->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password,
+        ]);
+        $users->save();
         return redirect('/multipilar/admin');
     }
     //END CRUD USER 

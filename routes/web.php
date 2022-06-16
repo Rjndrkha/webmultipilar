@@ -52,7 +52,10 @@ Route::get('/multipilar/admin/product/delete/{id}', [App\Http\Controllers\Dashbo
 //ADD NEW USER 
 Route::get('/multipilar/admin/add/user', [App\Http\Controllers\DashboardController::class, 'storeuserr'])->name('adduser');
 Route::post('/multipilar/admin/add/user/store', [App\Http\Controllers\DashboardController::class, 'storeuser'])->name('user.store');
-
+Route::get('/multipilar/admin/add/user/edit', [App\Http\Controllers\DashboardController::class, 'edit'])->name('user.edit');
+Route::post('/multipilar/admin/add/user/update', [App\Http\Controllers\DashboardController::class, 'update'])->name('user.update');
+// Route::get('/multipilar/admin/add/user/delete', [App\Http\Controllers\DashboardController::class, 'destroyuser'])->name('user.destroy');
+// Route::post('/multipilar/admin/add/user/delete', [App\Http\Controllers\DashboardController::class, 'destroyuser'])->name('user.destroy');
 
 
 
