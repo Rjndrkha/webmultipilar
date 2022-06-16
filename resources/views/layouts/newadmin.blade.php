@@ -210,9 +210,7 @@
                                                 <li>
                                                     <a href="/multipilar/admin/count"> Angka Project </a>
                                                 </li>
-                                                <li>
-                                                    <a href="/multipilar/admin/contact"> Qna </a>
-                                                </li>
+                                              
                                             </ul>
                                         </li>
                                     </ul>

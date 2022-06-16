@@ -12,8 +12,18 @@ use \App\Models\Count;
 use \App\Models\Consultation;
 use \App\Models\Service;
 use \App\Models\DataCount;
+use \App\Models\User;
 use \App\Models\Product;
+use Illuminate\Support\Facades\DB;
+use GuzzleHttp\Promise\Create;
 
+use App\Http\Controllers\Controller;
+use App\Providers\RouteServiceProvider;
+
+use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+use function GuzzleHttp\Promise\all;
 
 class DashboardController extends Controller
 {
@@ -23,10 +33,61 @@ class DashboardController extends Controller
         $this->middleware('auth');
     }
 
+    //CRUD ADD USER 
     public function index()
     {
-        return view('pages.admin.index');
+        $consultations = Consultation::all();
+        $user = User::all();
+        return view('pages.admin.index',[
+        'users' => $user,
+        'consultations' => $consultations,]);
+        
     }
+    public function storeuserr()
+    {
+        
+        return view('pages.admin.adduser');
+    }
+    public function storeuser(Request $request)
+    {
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request['password']),
+        ]);
+
+       
+        return redirect('/multipilar/admin');
+    }
+
+    public function edit(Request $request)
+    {
+        $id = $request->get('id');
+        $users = User::find($id);
+        return view('pages.admin.edituser', compact("users"));
+    }
+
+    public function update(Request $request)
+    {
+        $id = $request->id;
+        $users = User::find($id);
+        $users->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password,
+        ]);
+        $users->save();
+        return redirect('/multipilar/admin');
+    }
+
+    public function delete($id) {
+        
+        $users = User::find($id);
+        $users->delete();
+
+        return redirect('/multipilar/admin');
+    }
+    //END CRUD USER 
 
     public function indexbanner()
     {
@@ -59,7 +120,7 @@ class DashboardController extends Controller
     {
         
         $galleries = Gallery::all();
-        return view('pages.admin.gallery', ['gallerys' => $galleries]);
+        return view('pages.admin.gallery', ['galleries' => $galleries]);
     }
 
     public function indexcount()

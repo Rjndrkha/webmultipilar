@@ -49,6 +49,16 @@ Route::get('/multipilar/admin/product/create', [App\Http\Controllers\DashboardCo
 Route::get('/multipilar/admin/product/edit/{id}', [App\Http\Controllers\DashboardController::class, 'editproduct'])->name('product.edit');
 Route::get('/multipilar/admin/product/delete/{id}', [App\Http\Controllers\DashboardController::class, 'deleteproduct'])->name('product.delete');
 
+//ADD NEW USER 
+Route::get('/multipilar/admin/add/user', [App\Http\Controllers\DashboardController::class, 'storeuserr'])->name('adduser');
+Route::post('/multipilar/admin/add/user/store', [App\Http\Controllers\DashboardController::class, 'storeuser'])->name('user.store');
+Route::get('/multipilar/admin/add/user/edit', [App\Http\Controllers\DashboardController::class, 'edit'])->name('user.edit');
+Route::post('/multipilar/admin/add/user/update', [App\Http\Controllers\DashboardController::class, 'update'])->name('user.update');
+Route::post('/multipilar/admin/add/user/delete/{id}', [App\Http\Controllers\DashboardController::class, 'delete'])->name('user.delete');
+
+
+
+
 
 // banner edit
 Route::get('/dashboard/banner/edit/{id}', [App\Http\Controllers\BannerController::class, 'edit'])->name('banner.edit');
@@ -134,12 +144,10 @@ Route::get('/simfonimobile', [App\Http\Controllers\ProductController::class, 'si
 Route::get('/consultation-create', [App\Http\Controllers\ConsultationController::class, 'create'])->name('consultation.create');
 // consultation store
 Route::post('/home/consultation-store', [App\Http\Controllers\ConsultationController::class, 'store'])->name('consultation.store');
-// consultation edit
-Route::get('/home/consultation-edit/{id}', [App\Http\Controllers\ConsultationController::class, 'edit'])->name('consultation.edit');
+
 // consultation destroy
 Route::post('/home/consultation-destroy/{id}', [App\Http\Controllers\ConsultationController::class, 'destroy'])->name('consultation.destroy');
-// consultation update
-Route::post('/home/consultation-update/{id}', [App\Http\Controllers\ConsultationController::class, 'update'])->name('consultation.update');
+
 
 
 

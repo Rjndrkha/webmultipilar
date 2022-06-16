@@ -29,7 +29,7 @@ class GalleryController extends Controller
             'tag' => $request->tag,
             'author' => $request->author
         ]);
-        return redirect('/home');
+        return redirect('/multipilar/admin/gallery');
     }
 
     public function show($id)
@@ -55,13 +55,14 @@ class GalleryController extends Controller
             'tag' => $request->tag,
             'author' => $request->author
         ]);
-        return redirect('/home');
+        return redirect('/multipilar/admin/gallery');
     }
 
     public function destroy($id)
     {
         $gallery = Gallery::find($id);
         $gallery->delete();
+        return redirect('/multipilar/admin/gallery');
     }
 
 }

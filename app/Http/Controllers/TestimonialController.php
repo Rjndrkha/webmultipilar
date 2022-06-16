@@ -27,7 +27,7 @@ class TestimonialController extends Controller
             'address' => $request->address,
             'description' => $request->description
         ]);
-        return redirect('/home');
+        return redirect('/multipilar/admin/testimonial');
     }
 
     public function show($id)
@@ -51,14 +51,14 @@ class TestimonialController extends Controller
             'address' => $request->address,
             'description' => $request->description
         ]);
-        return redirect('/home');
+        return redirect('/multipilar/admin/testimonial');
     }
 
     public function destroy($id)
     {
         $testimonial = Testimonial::find($id);
         $testimonial->delete();
-        return redirect('/home');
+        return redirect('/multipilar/admin/testimonial');
     }
     
 }
