@@ -173,9 +173,9 @@
                                                                 </form>
 
                                                             </li>
-                                                            {{-- <li class="list-inline-item">
+                                                            <li class="list-inline-item">
 
-                                                                <form action="{{ route('user.destroy', $user->id) }}"
+                                                                <form action="{{ route('user.delete', $user->id) }}"
                                                                     method="POST">
                                                                     @csrf
                                                                     @method('POST')
@@ -186,7 +186,7 @@
                                                                 </form>
 
 
-                                                            </li> --}}
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </td>

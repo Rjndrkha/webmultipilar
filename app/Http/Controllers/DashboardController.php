@@ -79,6 +79,14 @@ class DashboardController extends Controller
         $users->save();
         return redirect('/multipilar/admin');
     }
+
+    public function delete($id) {
+        
+        $users = User::find($id);
+        $users->delete();
+
+        return redirect('/multipilar/admin');
+    }
     //END CRUD USER 
 
     public function indexbanner()
